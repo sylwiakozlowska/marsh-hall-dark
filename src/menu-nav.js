@@ -1,25 +1,27 @@
-import React from 'react';
-
+import React from "react";
+import { Link } from "react-router-dom";
 
 function MenuNav() {
-    const items = [
-        {title: 'Home', link: '/home'},
-        {title: 'About us', link: '/About us'},
-        {title: 'Services', link: '/Services'},
-        {title: 'Project', link: '/Projects'},
-        {title: 'Contact us', link: '/Contact us'},
+  const items = [
+    { title: "Home", link: "/home" },
+    { title: "About us", link: "/about" },
+    { title: "Services", link: "/services" },
+    { title: "Project", link: "/projects" },
+    { title: "Contact us", link: "/contact" },
+  ];
 
-        ];
-       const li = items.map(({link, title}) => (
-          <a className="menu-nav-link" href={link}>
-            <li>{title}</li>
-          </a>
-        ));
-return(
-     <nav className="main-wrapper">
-    <ul className="menu-nav">{li}</ul>
-  </nav>
-)
+  const li = items.map(({ link, title }) => (
+    <li>
+      <Link to={link} className="menu-nav-link">
+        {title}
+      </Link>
+    </li>
+  ));
+  return (
+    <nav className="main-wrapper">
+      <ul className="menu-nav">{li}</ul>
+    </nav>
+  );
 }
 
 export default MenuNav;
