@@ -1,0 +1,23 @@
+.menu-nav {
+  display: flex;
+  justify-content: center;
+
+  .menu {
+    display: flex;
+
+    @include mobile() {
+      flex-direction: column;
+    }
+  }
+
+    li {
+      list-style: none;
+
+      .menu-nav-link {
+        text-decoration: none;
+        // display: flex;
+        // justify-content: space-between;
+      }
+    }
+  }
+

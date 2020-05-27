@@ -1,39 +1,34 @@
-import React from 'react';
-import Header from './components/header/Header';
-import MenuNav from './menu-nav';
-import './App.scss';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import Home from './pages/home/Home';
-import About from './pages/about/About';
-
-
+import React from "react";
+import Header from "./components/header/Header";
+import "./App.scss";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/home/Home";
+import About from "./pages/about/About";
 
 function App() {
-
-
-  return(
-    <div>
-      <Header/>
+  return (
+    <div className="app">
       <Router>
-      <MenuNav/> 
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-        </Switch>
-        </Router>       
+        <div className="header-wrap">
+          <Header />
+        </div>
+        <div className="content-wrap">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/home">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+      <div className="footer-wrap">footer</div>
     </div>
-  )
+  );
 }
 
 export default App;

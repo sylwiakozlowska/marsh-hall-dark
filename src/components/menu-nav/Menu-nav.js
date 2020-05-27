@@ -11,15 +11,15 @@ function MenuNav() {
   ];
 
   const li = items.map(({ link, title }) => (
-    <li>
+    <li className="">
       <Link to={link} className="menu-nav-link">
         {title}
       </Link>
     </li>
   ));
   return (
-    <nav className="main-wrapper">
-      <ul className="menu-nav">{li}</ul>
+    <nav className="menu-nav">
+      <ul className="menu">{li}</ul>
     </nav>
   );
 }

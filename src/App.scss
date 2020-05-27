@@ -1,11 +1,45 @@
-@import "../node_modules/bulma/bulma.sass";
-@import "./pages/home/home.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 
+$tablet: 500px;
+// $primary: orange;
+
+
+@import "../node_modules/bulma/bulma.sass";
+
+
+@import "./pages/home/home.scss";
+@import "./components/header/header.scss";
+@import "./components/menu-nav/menu-nav.scss";
+
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+
+.app {
+  margin: 0 20%;
+  @include tablet {
+    margin: 0 10%;
+  }
+  @include mobile {
+    margin: 0;
+  }
+
+  .header-wrap {
+    border: 1px solid yellow;
+
+  }
+  .content-wrap {
+    border: 1px solid orchid;
+  }
+  .footer-wrap {
+    border: 1px solid purple;
+  }
+}
 
 .App {
   text-align: center;
 }
-
 
 .App-header {
   background-color: #282c34;
@@ -18,25 +52,10 @@
   color: white;
 }
 
-
 .App-link {
   color: #61dafb;
 }
 
-.main-wrapper {
-  display: flex;
-  justify-content: center;
-  .menu-nav-link {
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-  }
-  ul {
-    display: flex;
-  }
-  li {
-    list-style: none;
-    
-  }
-
+.is-hidden {
+  display: none;
 }
