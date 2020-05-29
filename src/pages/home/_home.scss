@@ -1,9 +1,59 @@
-.home {
-    color: blue;
-  
-    .items {
-        background: red;
+.home-component {
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #f7f7f7f5;
+
+    @include mobile() {
+      flex-direction: column-reverse;
     }
+    .home-picture {
+      @include mobile() {
+        width: 100%;
+      }
+    }
+    .content-text {
+      justify-content: center;
+      text-align: center;
+
+      h1 {
+        color: #b38a4c;
+        @include mobile() {
+          font-size: 28px;
+          text-align: left;
+        }
+        @include tablet() {
+          font-size: 24px;
+        }
+        @include desktop() {
+          font-size: 30px;
+          margin-bottom: 30px;
+        }
+        @include fullhd() {
+          font-size: 35px;
+          margin-bottom: 35px;
+        }
+      }
+      h3 {
+        @include mobile() {
+          display: none;
+        }
+        @include tablet() {
+          font-size: 16px;
+          margin-top: 10px;
+        }
+      }
+      p {
+        @include mobile() {
+          font-size: 14px;
+          text-align: left;
+          margin-bottom: 15px;
+        }
+        @include tablet() {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
-
-

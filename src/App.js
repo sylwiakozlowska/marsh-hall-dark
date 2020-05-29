@@ -4,6 +4,7 @@ import "./App.scss";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
           </Switch>
         </div>
       </Router>
-      <div className="footer-wrap">footer</div>
+      <div className="footer-wrap"><Footer/></div>
     </div>
   );
 }

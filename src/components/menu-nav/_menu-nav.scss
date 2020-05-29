@@ -1,4 +1,4 @@
-.menu-nav {
+.menu-nav-component{
   display: flex;
   justify-content: center;
 
@@ -7,17 +7,31 @@
 
     @include mobile() {
       flex-direction: column;
+      align-items: center;
+      background: #f9f6f5;
+      width: 100%;
     }
   }
 
-    li {
-      list-style: none;
+  .nav-list {
+    list-style: none;
+    padding: 10px;
+    
 
-      .menu-nav-link {
-        text-decoration: none;
-        // display: flex;
-        // justify-content: space-between;
+    @include desktop (){
+      padding: 10px 25px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: black;
+      
+
+      @include mobile() {
+        color: black;
+        justify-content: center;
+        text-transform: uppercase;
       }
     }
   }
-
+}

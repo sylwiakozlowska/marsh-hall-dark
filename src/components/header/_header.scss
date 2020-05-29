@@ -3,63 +3,41 @@ $phone-width-large: 425px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
-// @mixin phone {
-//   @media (min-width: #{$phone-width-small}) and (max-width: #{$phone-width-large}) {
-//     @content;
-//   }
-// }
-// @mixin tablet {
-//   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
-//     @content;
-//   }
-// }
 
-// @mixin desktop {
-//   @media (min-width: #{$desktop-width}) {
-//     @content;
-//   }
-// }
-
-.header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-bottom: 1px solid black;
-  padding-bottom: 10px;
-
-  @include mobile() {
-    border-bottom: none;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-  }
-
-  .logo {
-    max-width: 300px;
-    border: 1px solid;
-
-    @include mobile(){
-      max-width: 250px;
-      justify-content: center;
-    }
-  }
-
-  .header-subtitle {
-    color: black;
-    border: 1px solid green;
-
+.header-component{
+  .items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+  
     @include mobile() {
-      display: none;
+      border-bottom: none;
+      flex-direction: row;
+      justify-content: center;
+      justify-content: space-around;
+    }
+  
+    .logo {
+      max-width: 300px;
+      border: 1px solid;
+  
+      @include mobile() {
+        max-width: 250px;
+        justify-content: center;
+      }
+    }
+  
+    .subtitle {
+      color: black;
+      border: 1px solid green;
+  
+      @include mobile() {
+        display: none;
+      }
     }
   }
-  .menu-burger {
-    display: none;
 
-    @include mobile {
-      display: flex;
-    }
-  }
-  // @include tablet;
-  // @include desktop;
 }
-
+  
