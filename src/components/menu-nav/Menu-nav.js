@@ -5,8 +5,8 @@ function MenuNav() {
   const items = [
     { title: "Home", link: "/home" },
     { title: "About us", link: "/about" },
-    { title: "Services", link: "/services" },
-    { title: "Project", link: "/projects" },
+    { title: "Projects", link: "/projects" },
+    { title: "Price guide", link: "/price-guide" },
     { title: "Contact us", link: "/contact" },
   ];
 

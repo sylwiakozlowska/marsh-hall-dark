@@ -10,5 +10,13 @@
    .info {
        width: 30%;
    }
+   .insta-icon, .fb-icon {
+       padding: 5px;
+   }
+   p{
+       @include mobile(){
+           font-size: 12px;
+       }
+   }
 
 }

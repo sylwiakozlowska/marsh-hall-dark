@@ -1,0 +1,23 @@
+.about-component {
+  .about-info {
+    padding: 10px;
+    h3 {
+      text-align: center;
+      color: #b38a4c;
+    }
+    .info {
+      display: inline-flex;
+      align-items: stretch;
+    }
+  }
+  .team-info {
+    padding: 10px;
+    .name {
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
+      color: #b38a4c;
+    }
+  }
+}

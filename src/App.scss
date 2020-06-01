@@ -1,7 +1,7 @@
 @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
-@import "../node_modules/animate.css";
+@import "../node_modules/animate.css/animate.css";
 
 $tablet: 500px;
 
@@ -16,9 +16,13 @@ $tablet: 500px;
 @import "./components/menu-nav/menu-nav.scss";
 @import "./components/testimonials/testimonials";
 @import "./components/footer/footer";
+@import "./pages/about/about";
 
 *, *::after, *::before {
     box-sizing: border-box;
+  }
+  html, body {
+    font-size: 16px;
   }
 
 .app {

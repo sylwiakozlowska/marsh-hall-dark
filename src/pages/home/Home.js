@@ -1,5 +1,5 @@
 import React from "react";
-import colourChart from "./assets/colour_chart.png";
+import colourChart from "./assets/homepic800x600.png";
 import Testimonials from "../../components/testimonials/Testimonials";
 
 
@@ -11,10 +11,9 @@ function Home() {
           className="home-picture"
           src={colourChart}
           alt="content"
-          width="50%"
         />
         <div className="content-text">
-          <h1>M&amp;nH Painters</h1>
+          <h1 className="title">M&amp;H Painters</h1>
           <h3>For all your painting and decorative needs</h3>
           <p>
             Established in London working together with specialist painters and
