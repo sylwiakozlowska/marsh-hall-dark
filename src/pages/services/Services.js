@@ -15,25 +15,25 @@ import wallpaper from "../home/assets/wallpaper1.png";
 import roof from "../home/assets/roof5.png";
 import interior from "../home/assets/interior.png";
 
-
-
 function Services() {
   return (
     <div className="services-component">
       <div className="services-content ">
         <h1 className="title is-3">Our Services</h1>
         <div className="top columns ">
-        <div className="column is-one-third">
+          <div className="column is-one-third">
             <figure className="is-128x128">
               <img src={interior} alt="services"></img>
             </figure>
-            <h3 className="title is-5">Interior & Exterior House/Commercial Painting, Decorating</h3>
+            <h3 className="title is-5">
+              Interior & Exterior House/Commercial Painting, Decorating
+            </h3>
           </div>
           <div className="column is-one-third">
             <figure className="is-128x128">
-              <img src={window} alt="services"></img>
+              <img src={wallpaper} alt="services"></img>
             </figure>
-            <h3 className="title is-5">Window Cleaning</h3>
+            <h3 className="title is-5">Wallpaper Installation</h3>
           </div>
           <div className="column is-one-third">
             <figure className="is-128x128">
@@ -51,17 +51,16 @@ function Services() {
           </div>
           <div className="column is-one-third">
             <figure className="is-128x128">
-              <img src={wallpaper} alt="services"></img>
-            </figure>
-            <h3 className="title is-5">Wallpaper Installation</h3>
-          </div>
-          <div className="column is-one-third">
-            <figure className="is-128x128">
               <img src={color} alt="services"></img>
             </figure>
             <h3 className="title is-5">Colour Consultation</h3>
           </div>
-
+          <div className="column is-one-third">
+            <figure className="is-128x128">
+              <img src={window} alt="services"></img>
+            </figure>
+            <h3 className="title is-5">Window Cleaning</h3>
+          </div>
         </div>
       </div>
     </div>
