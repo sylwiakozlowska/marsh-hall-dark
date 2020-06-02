@@ -23,11 +23,11 @@ function Services() {
       <div className="services-content ">
         <h1 className="title is-3">Our Services</h1>
         <div className="top columns ">
-          <div className="column is-one-third">
+        <div className="column is-one-third">
             <figure className="is-128x128">
-              <img src={color} alt="services"></img>
+              <img src={interior} alt="services"></img>
             </figure>
-            <h3 className="title is-5">Colour Consultation</h3>
+            <h3 className="title is-5">Interior & Exterior House/Commercial Painting, Decorating</h3>
           </div>
           <div className="column is-one-third">
             <figure className="is-128x128">
@@ -55,12 +55,13 @@ function Services() {
             </figure>
             <h3 className="title is-5">Wallpaper Installation</h3>
           </div>
-          <div className="column">
+          <div className="column is-one-third">
             <figure className="is-128x128">
-              <img src={interior} alt="services"></img>
+              <img src={color} alt="services"></img>
             </figure>
-            <h3 className="title is-5">Interior & Exterior House/Commercial Painting, Decorating</h3>
+            <h3 className="title is-5">Colour Consultation</h3>
           </div>
+
         </div>
       </div>
     </div>
