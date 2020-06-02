@@ -9520,39 +9520,9 @@ fieldset[disabled] .button {
   padding-top: 300%;
 }
 
-.image.is-16x16 {
-  height: 16px;
-  width: 16px;
-}
-
-.image.is-24x24 {
-  height: 24px;
-  width: 24px;
-}
-
-.image.is-32x32 {
-  height: 32px;
-  width: 32px;
-}
-
-.image.is-48x48 {
-  height: 48px;
-  width: 48px;
-}
-
-.image.is-64x64 {
-  height: 64px;
-  width: 64px;
-}
-
-.image.is-96x96 {
-  height: 96px;
-  width: 96px;
-}
-
-.image.is-128x128 {
-  height: 128px;
-  width: 128px;
+.image.is-200x200 {
+  height: 200px;
+  width: 200px;
 }
 
 .notification {
@@ -18177,6 +18147,18 @@ label.panel-block:hover {
 .about-component .team-info h3 {
   text-align: center;
   color: #b38a4c;
+}
+
+.services-component .services-content h1 {
+  color: #b38a4c;
+  text-align: center;
+  padding: 10px;
+}
+
+.services-component .services-content .top h3, .services-component .services-content .bottom h3 {
+  color: #b38a4c;
+  padding: 10px;
+  text-align: center;
 }
 
 *, *::after, *::before {

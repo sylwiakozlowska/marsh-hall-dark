@@ -4,7 +4,7 @@
 @import "../node_modules/animate.css/animate.css";
 
 $tablet: 500px;
-
+$dimensions: 200;
 // $primary: orange;
 
 
@@ -17,6 +17,8 @@ $tablet: 500px;
 @import "./components/testimonials/testimonials";
 @import "./components/footer/footer";
 @import "./pages/about/about";
+@import "./pages/services/services";
+@import "./pages/projects/projects.scss";
 
 *, *::after, *::before {
     box-sizing: border-box;

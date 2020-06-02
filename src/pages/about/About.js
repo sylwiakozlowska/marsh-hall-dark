@@ -1,5 +1,4 @@
 import React from "react";
-// import aboutpic from "../home/assets/original-about.png";
 import colourChart from "../home/assets/homepic800x600.png";
 
 function About() {
