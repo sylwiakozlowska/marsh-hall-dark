@@ -11,11 +11,13 @@ $break: 800px;
     align-items: center;
     background: #f7f7f7f5;
     text-align: center;
+
     @include medium-bp {
       flex-direction: column-reverse;
     }
     .home-picture {
       width: 50%;
+      
       @include medium-bp {
         width: 100%;
         margin-top: 10px;
@@ -24,7 +26,6 @@ $break: 800px;
     .content-text {
       justify-content: center;
       padding: 10px;
-
       h1 {
         color: #b38a4c;
 
@@ -35,7 +36,7 @@ $break: 800px;
           margin-bottom: 35px;
         }
       }
-      h3 {
+      h4 {
         @include mobile() {
           display: none;
         }

@@ -1,7 +1,7 @@
 .about-component {
   .about-info {
     padding: 10px;
-    h3 {
+    h1 {
       text-align: center;
       color: #b38a4c;
     }
@@ -12,12 +12,10 @@
   }
   .team-info {
     padding: 10px;
-    .name {
-      text-align: center;
   }
+  h1,
   h3 {
     text-align: center;
     color: #b38a4c;
   }
-}
 }

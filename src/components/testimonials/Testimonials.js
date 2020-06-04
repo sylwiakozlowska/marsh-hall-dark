@@ -33,7 +33,7 @@ export default () => {
     <div className="content">
       <i className="fas fa-quote-right fa-1x"></i>
       <p>{el.content}</p>
-      <h5>{el.by}</h5>
+      <p className="title is-4">{el.by}</p>
     </div>
   ));
 

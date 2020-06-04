@@ -5,7 +5,7 @@ function About() {
   return (
     <div className="about-component">
       <div className="about-info">
-        <h3 className="title is-3">About us</h3>
+        <h1 className="title is-1">About us</h1>
         <div className="info">
           <p>
             Established in London working together with specialist painters and
@@ -27,8 +27,8 @@ function About() {
         </div>
       </div>
       <div className="team-info">
-        <h3 className="title is-3">Meet Our Core Team</h3>
-        <h5 className="name title is-5">Graeme</h5>
+        <h1 className="title is-1">Meet Our Core Team</h1>
+        <h3 className="title is-3">Graeme</h3>
         <div className="team columns">
           <div className="column is-one-quarter">
             <figure className="photo is-128x128">
@@ -48,7 +48,7 @@ function About() {
             oldest and newest friends to form the close-knit team we are today!
           </p>
         </div>
-        <h5 className="name title is-5">Olly</h5>
+        <h3 className="title is-3">Olly</h3>
         <div className="team columns ">
           <div className="column is-one-quarter">
             <figure className="photo is-128x128">
@@ -65,7 +65,7 @@ function About() {
             with charm and a smile!
           </p>
         </div>
-        <h5 className="name title is-5">Cristi</h5>
+        <h3 className="title is-3">Cristi</h3>
         <div className="team columns">
           <div className="column is-one-quarter">
             <figure className="photo is-128x128">

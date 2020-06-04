@@ -29,7 +29,7 @@ function PriceGuide() {
 
   const elem = data.map(({ title, factors }) => (
     <div key={title} className="content">
-      <h3 className="title is-5">{title}</h3>
+      <h3 className="title is-3">{title}</h3>
       <ul>
         {factors.map((factor, i) => (
           <li key={i} className="item-list">
@@ -43,7 +43,7 @@ function PriceGuide() {
   return (
     <div className="price-component">
       <div className="component">
-        <h1 className="title is-3">
+        <h1 className="title is-1">
           A few factors that may influence the price:
         </h1>
         <p>

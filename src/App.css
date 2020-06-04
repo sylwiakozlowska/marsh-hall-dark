@@ -17976,13 +17976,13 @@ label.panel-block:hover {
 }
 
 @media screen and (max-width: 499px) {
-  .home-component .main-content .content-text h3 {
+  .home-component .main-content .content-text h4 {
     display: none;
   }
 }
 
 @media screen and (min-width: 500px), print {
-  .home-component .main-content .content-text h3 {
+  .home-component .main-content .content-text h4 {
     margin-top: 10px;
   }
 }
@@ -18079,24 +18079,24 @@ label.panel-block:hover {
   }
 }
 
-.menu-nav-component .nav-list {
+.menu-nav-component .menu .nav-list {
   list-style: none;
   padding: 10px;
 }
 
 @media screen and (min-width: 1024px) {
-  .menu-nav-component .nav-list {
+  .menu-nav-component .menu .nav-list {
     padding: 10px 25px;
   }
 }
 
-.menu-nav-component .nav-list .nav-link {
+.menu-nav-component .menu .nav-list .nav-link {
   text-decoration: none;
   color: black;
 }
 
 @media screen and (max-width: 499px) {
-  .menu-nav-component .nav-list .nav-link {
+  .menu-nav-component .menu .nav-list .nav-link {
     color: black;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -18138,11 +18138,16 @@ label.panel-block:hover {
 
 .footer-component h4 {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .footer-component .info .insta-icon,
 .footer-component .info .fb-icon {
   padding: 5px;
+}
+
+.footer-component .info h4 {
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 499px) {
@@ -18155,7 +18160,7 @@ label.panel-block:hover {
   padding: 10px;
 }
 
-.about-component .about-info h3 {
+.about-component .about-info h1 {
   text-align: center;
   color: #b38a4c;
 }
@@ -18173,11 +18178,8 @@ label.panel-block:hover {
   padding: 10px;
 }
 
-.about-component .team-info .name {
-  text-align: center;
-}
-
-.about-component .team-info h3 {
+.about-component h1,
+.about-component h3 {
   text-align: center;
   color: #b38a4c;
 }
@@ -18203,6 +18205,11 @@ label.panel-block:hover {
 .contact-component .content p {
   text-align: center;
   padding: 10px;
+  font-weight: bold;
+}
+
+.contact-component .form-contact {
+  margin: 0 5px;
 }
 
 .contact-component .form-contact .submit-button {
@@ -18217,7 +18224,7 @@ label.panel-block:hover {
 .contact-component .form-contact .button {
   background: #d3d3d3;
   border: 1px solid #b5b5b5;
-  margin-bottom: 20px;
+  margin: 10px 20px;
 }
 
 .price-component .component h1 {

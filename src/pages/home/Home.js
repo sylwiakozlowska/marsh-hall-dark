@@ -13,8 +13,8 @@ function Home() {
           alt="content"
         />
         <div className="content-text">
-          <h1 className="title">M&amp;H Painters</h1>
-          <h3>For all your painting and decorative needs</h3>
+          <h1 className="title is-1">M&amp;H Painters</h1>
+          <h4 className="title is-4">For all your painting and decorative needs</h4>
           <p>
             Established in London working together with specialist painters and
             decorators for over five years. With over 50 years experience
