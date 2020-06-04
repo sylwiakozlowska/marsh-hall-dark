@@ -27,7 +27,7 @@ function About() {
         </div>
       </div>
       <div className="team-info">
-        <h3 className="title is-3">Meet the Team leaders</h3>
+        <h3 className="title is-3">Meet Our Core Team</h3>
         <h5 className="name title is-5">Graeme</h5>
         <div className="team columns">
           <div className="column is-one-quarter">

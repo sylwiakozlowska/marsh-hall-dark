@@ -4,7 +4,11 @@
 @import "../node_modules/animate.css/animate.css";
 
 $tablet: 500px;
-$dimensions: 200;
+$size-1: 35px;
+$size-2: 25px;
+$size-3: 20px;
+$size-4: 18px;
+$size-5: 15px;
 // $primary: orange;
 
 
@@ -13,18 +17,22 @@ $dimensions: 200;
 
 @import "./pages/home/home.scss";
 @import "./components/header/header.scss";
-@import "./components/menu-nav/menu-nav.scss";
+@import "./components/menu-nav/menuNav";
 @import "./components/testimonials/testimonials";
 @import "./components/footer/footer";
 @import "./pages/about/about";
 @import "./pages/services/services";
 @import "./pages/projects/projects.scss";
+@import "./pages/contact/contact";
+@import "./pages/price-guide/price-guide";
+
 
 *, *::after, *::before {
     box-sizing: border-box;
   }
   html, body {
     font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
   }
 
 .app {

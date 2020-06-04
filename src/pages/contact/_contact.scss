@@ -1,0 +1,24 @@
+.contact-component {
+  .content {
+    h1 {
+      color: #b38a4c;
+      text-align: center;
+      padding: 10px;
+    }
+    p {
+      text-align: center;
+      padding: 10px;
+    }
+  }
+  .form-contact {
+    .submit-button {
+      display: flex;
+      justify-content: center;
+    }
+    .button {
+      background: #d3d3d3;
+      border: 1px solid #b5b5b5;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "./logo.png";
-import MenuNav from "../menu-nav/Menu-nav";
+import MenuNav from "../menu-nav/MenuNav";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ function Header() {
     <div className="header-component">
       <div className="items">
         <img className="logo" src={logo} width="400px" alt="logo-marsh-hall" />
-        <p className="subtitle">Painting & Decorating</p>
+        <p className="subtitle is-3">Painting & Decorating</p>
         <i
           className="menu-burger fas fa-bars fa-3x is-hidden-tablet"
           onClick={toggleMenuDrawer}

@@ -7,6 +7,8 @@ import About from "./pages/about/About";
 import Services from "./pages/services/Services";
 import Footer from "./components/footer/Footer";
 import Projects from "./pages/projects/Projects";
+import PriceGuide from "./pages/price-guide/PriceGuide";
+import Contact from "./pages/contact/Contact";
 
 function App() {
   return (
@@ -31,6 +33,12 @@ function App() {
             </Route>
             <Route path="/projects">
               <Projects />
+            </Route>
+            <Route path="/price-guide">
+              <PriceGuide />
+            </Route>
+            <Route path="/contact">
+              <Contact />
             </Route>
           </Switch>
         </div>
