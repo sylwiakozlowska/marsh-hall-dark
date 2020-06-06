@@ -3,7 +3,7 @@
     padding: 10px;
     h1 {
       text-align: center;
-      color: #b38a4c;
+      color: $primary;
     }
   }
   .team-info {
@@ -12,6 +12,6 @@
   h1,
   h3 {
     text-align: center;
-    color: #b38a4c;
+    color: $primary;
   }
 }

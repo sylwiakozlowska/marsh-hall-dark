@@ -3,41 +3,58 @@ $phone-width-large: 425px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
-
-.header-component{
+.header-component {
   .items {
     display: flex;
     align-items: center;
     flex-direction: column;
     border-bottom: 1px solid black;
     padding-bottom: 20px;
-  
+
     @include mobile() {
       border-bottom: none;
       flex-direction: row;
       justify-content: center;
-      justify-content: space-around;
+      justify-content: space-between;
+      // justify-content: flex-end; 
     }
-  
+
+    .spacer {
+      width: 30px;
+      border:1px solid red;
+      margin-left: 20px;
+    }
+
+    .logo-wrap {
+      // width: 33.3%;
+      border:1px solid red;
+      // justify-self: center; 
+    }
+    i {
+      border:1px solid blue;
+      width: 30px;
+      // align-self: flex-end;
+      // position: absolute;
+      margin-right: 20px;
+      // width: 33.3%;
+    }
     .logo {
       max-width: 300px;
       border: 1px solid;
-  
+
       @include mobile() {
         max-width: 250px;
         justify-content: center;
       }
     }
-  
+
     p {
       color: black;
       border: 1px solid green;
-  
+
       @include mobile() {
         display: none;
       }
     }
   }
-
 }
-  

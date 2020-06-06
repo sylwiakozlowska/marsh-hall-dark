@@ -19,10 +19,10 @@ function Services() {
   return (
     <div className="services-componet">
       <div className="services-content ">
-        <h1 className="title is-1">Our Services</h1>
+        <h1 className="title is-1 ">Our Services</h1>
         <div className="top columns ">
           <div className="column is-one-third">
-            <figure className="image is-128x128">
+            <figure className="image is-4by3">
               <img src={interior} alt="services"></img>
             </figure>
             <h3 className="title is-3">
@@ -30,13 +30,13 @@ function Services() {
             </h3>
           </div>
           <div className="column is-one-third">
-            <figure className="image is-128x128">
+            <figure className="image is-4by3">
               <img src={wallpaper} alt="services"></img>
             </figure>
             <h3 className="title is-3">Wallpaper Installation</h3>
           </div>
           <div className="column is-one-third">
-            <figure className="image is-128x128">
+            <figure className="image is-4by3">
               <img src={floor} alt="services"></img>
             </figure>
             <h3 className="title is-3">Floor Installation</h3>
@@ -44,19 +44,19 @@ function Services() {
         </div>
         <div className="bottom columns">
           <div className="column is-one-third">
-            <figure className="image is-128x128">
+            <figure className="image is-4by3">
               <img src={roof} alt="services"></img>
             </figure>
             <h3 className="title is-3">Roofing</h3>
           </div>
           <div className="column is-one-third">
-            <figure className="image is-128x128">
+            <figure className="image is-4by3">
               <img src={color} alt="services"></img>
             </figure>
             <h3 className="title is-3">Colour Consultation</h3>
           </div>
           <div className="column is-one-third">
-            <figure className="image is-128x128">
+            <figure className="image is-4by3">
               <img src={window} alt="services"></img>
             </figure>
             <h3 className="title is-3">Window Cleaning</h3>
