@@ -3,11 +3,12 @@
   justify-content: center;
   .menu {
     display: flex;
+    margin-bottom: 20px;
 
     @include mobile() {
       flex-direction: column;
       align-items: center;
-      background: #f9f6f5;
+      background: #f7f7f7;
       width: 100%;
     }
     .nav-list {
@@ -25,6 +26,15 @@
           color: black;
           justify-content: center;
           text-transform: uppercase;
+        }
+      }
+      .nav-link:hover {
+        @include mobile(){
+        background: rgba(241, 239, 239, 0.858);
+        color: grey;
+        font-weight: bold;
+        padding:10px;
+        border-radius: 5px;
         }
       }
     }

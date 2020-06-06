@@ -4,12 +4,13 @@
 @import "../node_modules/animate.css/animate.css";
 
 $tablet: 500px;
-$size-1: 35px;
+$size-1: 40px;
 $size-2: 25px;
 $size-3: 20px;
 $size-4: 18px;
 $size-5: 15px;
-// $primary: orange;
+
+$primary: #b38a4c;
 
 
 @import "../node_modules/bulma/bulma.sass";
@@ -25,7 +26,6 @@ $size-5: 15px;
 @import "./pages/projects/projects.scss";
 @import "./pages/contact/contact";
 @import "./pages/price-guide/price-guide";
-
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -46,36 +46,28 @@ $size-5: 15px;
   
 
   .header-wrap {
-    border: 1px solid yellow;
+    // border: 1px solid yellow;
 
   }
   .content-wrap {
-    border: 1px solid orchid;
+    // border: 1px solid orchid;
   }
   .footer-wrap {
-    border: 1px solid purple;
+    // border: 1px solid purple;
   }
-}
-
-.App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 .is-hidden {
   display: none;
+}
+// figure {
+//   margin-block-start: 0;
+//   margin-block-end: 0;
+//   margin-inline-start: 0;
+//   margin-inline-end: 0;
+// }
+
+.multiline {
+  white-space: pre-wrap;
+  padding:20px;
 }

@@ -6532,7 +6532,7 @@ table th {
 }
 
 .is-size-1 {
-  font-size: 35px !important;
+  font-size: 40px !important;
 }
 
 .is-size-2 {
@@ -6561,7 +6561,7 @@ table th {
 
 @media screen and (max-width: 499px) {
   .is-size-1-mobile {
-    font-size: 35px !important;
+    font-size: 40px !important;
   }
   .is-size-2-mobile {
     font-size: 25px !important;
@@ -6585,7 +6585,7 @@ table th {
 
 @media screen and (min-width: 500px), print {
   .is-size-1-tablet {
-    font-size: 35px !important;
+    font-size: 40px !important;
   }
   .is-size-2-tablet {
     font-size: 25px !important;
@@ -6609,7 +6609,7 @@ table th {
 
 @media screen and (max-width: 1023px) {
   .is-size-1-touch {
-    font-size: 35px !important;
+    font-size: 40px !important;
   }
   .is-size-2-touch {
     font-size: 25px !important;
@@ -6633,7 +6633,7 @@ table th {
 
 @media screen and (min-width: 1024px) {
   .is-size-1-desktop {
-    font-size: 35px !important;
+    font-size: 40px !important;
   }
   .is-size-2-desktop {
     font-size: 25px !important;
@@ -6657,7 +6657,7 @@ table th {
 
 @media screen and (min-width: 1216px) {
   .is-size-1-widescreen {
-    font-size: 35px !important;
+    font-size: 40px !important;
   }
   .is-size-2-widescreen {
     font-size: 25px !important;
@@ -6681,7 +6681,7 @@ table th {
 
 @media screen and (min-width: 1408px) {
   .is-size-1-fullhd {
-    font-size: 35px !important;
+    font-size: 40px !important;
   }
   .is-size-2-fullhd {
     font-size: 25px !important;
@@ -10428,7 +10428,7 @@ a.tag:hover {
 }
 
 .title.is-1 {
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .title.is-2 {
@@ -10472,7 +10472,7 @@ a.tag:hover {
 }
 
 .subtitle.is-1 {
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .subtitle.is-2 {
@@ -18063,6 +18063,7 @@ label.panel-block:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 499px) {
@@ -18074,7 +18075,7 @@ label.panel-block:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: #f9f6f5;
+    background: #f7f7f7;
     width: 100%;
   }
 }
@@ -18105,6 +18106,16 @@ label.panel-block:hover {
   }
 }
 
+@media screen and (max-width: 499px) {
+  .menu-nav-component .menu .nav-list .nav-link:hover {
+    background: rgba(241, 239, 239, 0.858);
+    color: grey;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
 .testimonials-component {
   margin: 20px 0;
 }
@@ -18123,17 +18134,12 @@ label.panel-block:hover {
 .testimonials-component .content i {
   display: inline-block;
   margin: 10px 0 10px 0;
+  color: #b38a4c;
 }
 
 .footer-component .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   text-align: center;
+  background: #f7f7f7f5;
 }
 
 .footer-component h4 {

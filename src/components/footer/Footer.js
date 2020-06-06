@@ -16,11 +16,9 @@ function Footer() {
           <p>graeme@marsh-hallpainters.com</p>
           <p>07801525121</p>
         </div>
-        <div className="info column is-one-third">
+        <div className="info column is-one-third multiline">
           <h4 className="title is-4">Address</h4>
-          <p>
-            34 Upper Tachbrook Street,<br></br>SW1V 1SW, <br></br>London
-          </p>
+          {"34 Upper Tachbrook Street\nSW1V 1SW\nLondon"}
         </div>
       </div>
     </div>

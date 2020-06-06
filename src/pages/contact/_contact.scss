@@ -1,17 +1,17 @@
 .contact-component {
-  .content {
+  .contact-details {
     h1 {
       color: #b38a4c;
       text-align: center;
       padding: 10px;
     }
-    p {
+    .address {
       text-align: center;
       padding: 10px;
       font-weight: bold;
     }
   }
-  .form-contact {
+  .contact-form {
     margin:0 5px;  
     .submit-button {
       display: flex;

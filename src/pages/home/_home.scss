@@ -1,10 +1,11 @@
-$break: 800px;
-@mixin medium-bp {
-  @media (max-width: #{$break}) {
-    @content;
-  }
-}
 .home-component {
+  $break: 800px;
+  @mixin medium-bp {
+    @media (max-width: #{$break}) {
+      @content;
+    }
+  }
+
   .main-content {
     display: flex;
     flex-direction: row;
@@ -15,7 +16,7 @@ $break: 800px;
     @include medium-bp {
       flex-direction: column-reverse;
     }
-    .home-picture {
+    .main-picture {
       width: 50%;
       
       @include medium-bp {
@@ -23,11 +24,11 @@ $break: 800px;
         margin-top: 10px;
       }
     }
-    .content-text {
+    .main-text {
       justify-content: center;
       padding: 10px;
       h1 {
-        color: #b38a4c;
+        color: $primary;
 
         @include desktop() {
           margin-bottom: 30px;
@@ -44,7 +45,7 @@ $break: 800px;
           margin-top: 10px;
         }
       }
-      p {
+      p.company-background {
         @include mobile() {
           text-align: left;
           margin-bottom: 15px;

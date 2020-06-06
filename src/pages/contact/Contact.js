@@ -4,14 +4,13 @@ import GoogleMap from "../../components/google-map/GoogleMap";
 function Contact() {
   return (
     <div className="contact-component">
-      <div className="content">
+      <div className="contact-details">
         <h1 className="title is-1">We'd like to hear from you</h1>
-        <p>
-          34 Upper Tachbrook Street,<br></br>SW1V 1SW, <br></br>London
-        </p>
-        <p>07801525121</p>
+        <div className="address multiline">
+          {"34 Upper Tachbrook Street\nSW1V 1SW\nLondon\n07801525121"}
+        </div>
       </div>
-      <div className="form-contact">
+      <div className="contact-form">
         <form action="#">
           <div className="field">
             <div className="control" />

@@ -31,7 +31,7 @@ export default () => {
 
   const sliderContent = testimonials.map((el) => (
     <div className="content">
-      <i className="fas fa-quote-right fa-1x"></i>
+      <i className="quotes fas fa-quote-right fa-1x"></i>
       <p>{el.content}</p>
       <p className="title is-4">{el.by}</p>
     </div>

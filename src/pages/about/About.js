@@ -6,33 +6,31 @@ function About() {
     <div className="about-component">
       <div className="about-info">
         <h1 className="title is-1">About us</h1>
-        <div className="info">
-          <p>
-            Established in London working together with specialist painters and
-            decorators for over five years. With over 50 years’ experience
-            combined we guarantee pride with our work and customer service.
-            Working in all areas of London we travel beyond the M25 and have a
-            team who have worked all over Europe. We use specialist tools that
-            not only provide the best possible finishes with long lasting
-            durability but also keep our dust(with our dust extractors) to a
-            minimum, something our clients regard an essential considering we
-            work in domestic properties with families still at home while we
-            work. Our cleanliness has always been at the forefront of our
-            working day, given our current climate we acknowledge the extra care
-            this aspect of our service provides. Trust is another obvious
-            fundamental, having the keys to our client’s castles is of the
-            upmost importance in making them feel at ease with us in their homes
-            while they’re out or away.
-          </p>
-        </div>
+        <p>
+          Established in London working together with specialist painters and
+          decorators for over five years. With over 50 years’ experience
+          combined we guarantee pride with our work and customer service.
+          Working in all areas of London we travel beyond the M25 and have a
+          team who have worked all over Europe. We use specialist tools that
+          not only provide the best possible finishes with long lasting
+          durability but also keep our dust(with our dust extractors) to a
+          minimum, something our clients regard an essential considering we
+          work in domestic properties with families still at home while we
+          work. Our cleanliness has always been at the forefront of our
+          working day, given our current climate we acknowledge the extra care
+          this aspect of our service provides. Trust is another obvious
+          fundamental, having the keys to our client’s castles is of the
+          upmost importance in making them feel at ease with us in their homes
+          while they’re out or away.
+        </p>
       </div>
       <div className="team-info">
         <h1 className="title is-1">Meet Our Core Team</h1>
         <h3 className="title is-3">Graeme</h3>
-        <div className="team columns">
+        <div className="columns">
           <div className="column is-one-quarter">
-            <figure className="photo is-128x128">
-              <img src={colourChart} alt="hello" />
+            <figure className="image is-128x128">
+              <img src={colourChart} alt="graeme's profile" />
             </figure>
           </div>
           <p className="column auto">
@@ -49,10 +47,10 @@ function About() {
           </p>
         </div>
         <h3 className="title is-3">Olly</h3>
-        <div className="team columns ">
+        <div className="columns">
           <div className="column is-one-quarter">
-            <figure className="photo is-128x128">
-              <img src={colourChart} alt="hello" />
+            <figure className="image is-128x128">
+              <img src={colourChart} alt="oli's profile" />
             </figure>
           </div>
           <p className="column auto">
@@ -66,10 +64,10 @@ function About() {
           </p>
         </div>
         <h3 className="title is-3">Cristi</h3>
-        <div className="team columns">
+        <div className="columns">
           <div className="column is-one-quarter">
-            <figure className="photo is-128x128">
-              <img src={colourChart} alt="hello" />
+            <figure className="image is-128x128">
+              <img src={colourChart} alt="cristi's profile" />
             </figure>
           </div>
           <p className="column auto">
