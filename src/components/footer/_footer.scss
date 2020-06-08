@@ -1,18 +1,15 @@
 .footer-component {
-  .content {
-    text-align: center;
-  }
-  h4 {
+  .contact-title {
     text-align: center;
     margin-bottom: 10px;
+  }
+  .contact-details {
+    text-align: center;
   }
   .info {
     .insta-icon,
     .fb-icon {
       padding: 5px;
-    }
-    h4 {
-      margin-bottom: 10px;
     }
     p {
       @include mobile() {

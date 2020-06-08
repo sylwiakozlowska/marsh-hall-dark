@@ -17,7 +17,7 @@
     }
     .main-picture {
       width: 50%;
-      
+
       @include medium-bp {
         width: 100%;
         margin-top: 10px;
@@ -26,17 +26,8 @@
     .main-text {
       justify-content: center;
       padding: 10px;
-      h1 {
-        color: $primary;
-
-        @include desktop() {
-          margin-bottom: 30px;
-        }
-        @include fullhd() {
-          margin-bottom: 35px;
-        }
-      }
-      h4 {
+      .subtitle {
+        font-weight: bolder;
         @include mobile() {
           display: none;
         }
@@ -44,7 +35,7 @@
           margin-top: 10px;
         }
       }
-      p.company-background {
+      .company-background {
         @include mobile() {
           text-align: left;
           margin-bottom: 15px;

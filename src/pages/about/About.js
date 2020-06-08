@@ -48,7 +48,7 @@ function About() {
         <div className="profile">
           <h3 className="title is-3">Olly</h3>
           <figure className="image is-5by3">
-            <img src={profile2} alt="oli's profile" />
+            <img src={profile2} alt="olly's profile" />
           </figure>
           <p className="description">
             Hi, I’m Olly, born and bred in West London, now living in Ealing

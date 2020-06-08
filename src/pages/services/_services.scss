@@ -1,17 +1,7 @@
 .services-component {
-  .services-content {
-    h1 {
-      color: $primary;
-      text-align: center;
+  .services {
+    h3 {
       padding: 10px;
-    }
-    .top,
-    .bottom {
-      h3 {
-        color: $primary;
-        padding: 10px;
-        text-align: center;
-      }
     }
   }
 }

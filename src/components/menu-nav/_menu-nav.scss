@@ -29,12 +29,12 @@
         }
       }
       .nav-link:hover {
-        @include mobile(){
-        background: rgba(241, 239, 239, 0.858);
-        color: grey;
-        font-weight: bold;
-        padding:10px;
-        border-radius: 5px;
+        @include mobile() {
+          background: rgba(241, 239, 239, 0.858);
+          color: grey;
+          font-weight: bold;
+          padding: 10px;
+          border-radius: 5px;
         }
       }
     }

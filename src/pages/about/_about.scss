@@ -4,16 +4,10 @@ $break: 800px;
     @content;
   }
 }
-
 .about-component {
   .description {
     text-align: center;
     padding: 10px;
-  }
-  h1,
-  h3 {
-    text-align: center;
-    color: $primary;
   }
   .about-info {
     padding: 10px;
@@ -22,7 +16,6 @@ $break: 800px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
     .profile {
       .description {
         background: #f7f7f7f5;

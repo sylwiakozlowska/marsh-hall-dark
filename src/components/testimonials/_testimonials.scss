@@ -1,15 +1,16 @@
 .testimonials-component {
   margin: 20px 0;
-  .carousel-track,
-  .carousel-dots {
+  .carousel-track {
     background: #f7f7f7f5;
-    padding-bottom: 20px;
   }
-  .content {
+  .carousel-dots {
+    padding: 15px;
     background: #f7f7f7f5;
-    padding: 0 10px;
+  }
+  .testimonials-content {
+    background: #f7f7f7f5;
     text-align: center;
-    i {
+    .quotes {
       display: inline-block;
       margin: 10px 0 10px 0;
     }
