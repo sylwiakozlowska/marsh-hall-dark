@@ -17,9 +17,9 @@ import interior from "../home/assets/interior.png";
 
 function Services() {
   return (
-    <div className="services-componet">
-      <div className="services-content ">
-        <h1 className="title is-1 ">Our Services</h1>
+    <div className="services-component page">
+      <div className="services-content">
+        <h1 className="title is-1">Our Services</h1>
         <div className="top columns ">
           <div className="column is-one-third">
             <figure className="image is-4by3">

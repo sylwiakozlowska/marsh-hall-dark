@@ -4,7 +4,7 @@ import colourChart from "./assets/homepic800x600.png";
 
 function Home() {
   return (
-    <div className="home-component">
+    <div className="home-component page">
       <div className="main-content">
         <img
           className="main-picture"

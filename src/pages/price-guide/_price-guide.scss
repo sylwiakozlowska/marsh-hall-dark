@@ -1,13 +1,14 @@
 .price-component {
-  .component {
+  .main-content {
     h1 {
-      color: #b38a4c;
+      color: $primary;
+      text-align: center;
     }
   }
-  .content {
+  .main-guide {
     h3 {
       margin-top: 10px;
-      color: #b38a4c;
+      color: $primary;
     }
   }
 }

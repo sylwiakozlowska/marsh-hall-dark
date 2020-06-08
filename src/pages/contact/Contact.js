@@ -3,7 +3,7 @@ import GoogleMap from "../../components/google-map/GoogleMap";
 
 function Contact() {
   return (
-    <div className="contact-component">
+    <div className="contact-component page">
       <div className="contact-details">
         <h1 className="title is-1">We'd like to hear from you</h1>
         <div className="address multiline">

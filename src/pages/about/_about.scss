@@ -1,17 +1,42 @@
-.about-component {
-  .about-info {
-    padding: 10px;
-    h1 {
-      text-align: center;
-      color: $primary;
-    }
+$break: 800px;
+@mixin medium-bp {
+  @media (max-width: #{$break}) {
+    @content;
   }
-  .team-info {
+}
+
+.about-component {
+  .description {
+    text-align: center;
     padding: 10px;
   }
   h1,
   h3 {
     text-align: center;
     color: $primary;
+  }
+  .about-info {
+    padding: 10px;
+  }
+  .team-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .profile {
+      .description {
+        background: #f7f7f7f5;
+      }
+      padding: 10px;
+      @include medium-bp() {
+        width: 100%;
+      }
+      @include desktop() {
+        width: 50%;
+      }
+      @include fullhd() {
+        width: 33%;
+      }
+    }
   }
 }

@@ -16,41 +16,30 @@ $desktop-width: 1024px;
       flex-direction: row;
       justify-content: center;
       justify-content: space-between;
-      // justify-content: flex-end; 
+      // justify-content: flex-end;
     }
-
-    .spacer {
-      width: 30px;
-      border:1px solid red;
-      margin-left: 20px;
-    }
-
-    .logo-wrap {
-      // width: 33.3%;
-      border:1px solid red;
-      // justify-self: center; 
+    @include mobile() {
+      .spacer {
+        width: 30px;
+        margin-left: 20px;
+      }
     }
     i {
-      border:1px solid blue;
       width: 30px;
-      // align-self: flex-end;
-      // position: absolute;
       margin-right: 20px;
-      // width: 33.3%;
     }
     .logo {
       max-width: 300px;
-      border: 1px solid;
+      margin-top: 20px;
 
       @include mobile() {
         max-width: 250px;
         justify-content: center;
       }
     }
-
     p {
       color: black;
-      border: 1px solid green;
+      text-align: center;
 
       @include mobile() {
         display: none;
