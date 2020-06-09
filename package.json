@@ -2,7 +2,7 @@
   "name": "marsh-hall",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://sylwiakozlowska.github.io/marsh-hall",
+  "homepage": "https://sylwiakozlowska.github.io/marsh-hall",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@testing-library/jest-dom": "^4.2.4",
