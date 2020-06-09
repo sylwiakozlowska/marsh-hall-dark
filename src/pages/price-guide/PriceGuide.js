@@ -3,14 +3,14 @@ import React from "react";
 function PriceGuide() {
   const data = [
     {
-      title: "Painting:",
+      title: "Painting",
       factors: [
         "The number of cracks in a wall",
         "The brand of paint which might cost more or less",
       ],
     },
     {
-      title: "Wallpaper:",
+      title: "Wallpaper",
       factors: [
         "Stripping wallpaper",
         "The level of damage after the wallpaper has been stripped",
@@ -18,7 +18,7 @@ function PriceGuide() {
       ],
     },
     {
-      title: "Woodwork:",
+      title: "Woodwork",
       factors: [
         "The level of sanding for the old woodwork",
         "Was the woodwork previously painted with an old 30 year old oil base paint",
@@ -44,7 +44,7 @@ function PriceGuide() {
     <div className="price-component page">
       <div className="main-content">
         <h1 className="title is-1">
-          A few factors that may influence the price:
+          Price guide
         </h1>
         <p>
           The main reason for this guide with our business is to explain the
@@ -54,6 +54,7 @@ function PriceGuide() {
           negociable prices.
         </p>
       </div>
+      <h2 className="factor-title title is-2">A few factors that may influence the price</h2>
       {elem}
     </div>
   );
