@@ -11,9 +11,20 @@ $size-4: 18px;
 $size-5: 15px;
 
 $primary: #b38a4c;
+$family-primary: family-Nunito-Light;
+// $family-primary: family-Muli-Light;
+// $family-primary: family-Roboto-Light;
 
 @import "../node_modules/bulma/bulma.sass";
 
+
+@import "./fonts/nunito/Nunito-Light.ttf";
+@import "./fonts/nunito/Nunito-Bold.ttf";
+@import "./fonts/nunito/Nunito-Italic.ttf";
+@import "./fonts/Muli/Muli-Light.ttf";
+@import "./fonts/Muli/Muli-Bold.ttf";
+@import "./fonts/roboto/Roboto-Light.ttf";
+@import "./fonts/roboto/Roboto-Bold.ttf";
 @import "./pages/home/home";
 @import "./components/header/header";
 @import "./components/menu-nav/menu-nav";
@@ -25,6 +36,7 @@ $primary: #b38a4c;
 @import "./pages/contact/contact";
 @import "./pages/price-guide/price-guide";
 
+
 *,
 *::after,
 *::before {
@@ -32,8 +44,7 @@ $primary: #b38a4c;
 }
 html,
 body {
-  font-size: 16px;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -59,17 +70,18 @@ body {
     margin: 0;
   }
 
-  .header-wrap {
-    border: 1px solid yellow;
-  }
-  .content-wrap {
-    border: 1px solid orchid;
-  }
-  .footer-wrap {
-    border: 1px solid purple;
-  }
+  // .header-wrap {
+  //   border: 1px solid yellow;
+  // }
+  // .content-wrap {
+  //   border: 1px solid orchid;
+  // }
+  // .footer-wrap {
+  //   border: 1px solid purple;
+  // }
 }
 
+//menu-nav burger display none on bigger devices than phone
 .is-hidden {
   display: none;
 }
@@ -81,3 +93,48 @@ body {
     font-size: 12px;
   }
 }
+
+//custom font-weight
+//Nunito
+@font-face {
+  font-family: 'Nunito-Light';
+     src: url('fonts/nunito/Nunito-Light.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Nunito-Bold';
+     src: url('fonts/nunito/Nunito-Bold.ttf');
+  font-weight: bold;
+}
+
+//Muli
+// @font-face {
+//   font-family: 'Muli-Light';
+//      src: url('fonts/Muli/Muli-Light.ttf');
+//   font-weight: normal;
+// }
+
+// @font-face {
+//   font-family: 'Muli-Bold';
+//      src: url('fonts/Muli/Muli-Bold.ttf');
+//   font-weight: bold;
+// }
+
+// Roboto
+// @font-face {
+//   font-family: 'Roboto-Light';
+//      src: url('fonts/roboto/Roboto-Light.ttf');
+//   font-weight: normal;
+// }
+
+// @font-face {
+//   font-family: 'Roboto-Bold';
+//      src: url('fonts/roboto/Roboto-Bold.ttf');
+//   font-weight: bold;
+// }
+
+// p { 
+//   // font-family: 'Roboto-Bold';
+//   font-weight: bold;
+// };
