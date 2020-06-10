@@ -1,6 +1,7 @@
 import React from "react";
-import GoogleMap from "../../components/google-map/GoogleMap";
-
+// import GoogleMap from "../../components/google-map/GoogleMap";
+// import MyMapComponent from "../../components/google-map/GoogleMap";
+import Map from "../../components/map/Map"
 function Contact() {
   return (
     <div className="contact-component page">
@@ -37,9 +38,18 @@ function Contact() {
           </div>
         </form>
       </div>
-      <GoogleMap />
+
+      <div style={{width: "100%", height: "300px"}}>
+        <Map 
+          googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAz11B4GW_29EsqMIvJLG0Ay49CrFDvQ98"
+          loadingElement={<div style={{ height: `100%` }} />}
+          containerElement={<div style={{ height: `100%` }} />}
+          mapElement={<div style={{ height: `100%` }} />}
+        />
+      </div>
     </div>
   );
 }
+    // googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz11B4GW_29EsqMIvJLG0Ay49CrFDvQ98&v=3.exp&libraries=geometry,drawing,places"
 
 export default Contact;
