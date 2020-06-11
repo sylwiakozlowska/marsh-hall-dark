@@ -1,4 +1,5 @@
 import React from "react";
+import price1 from "./assets/price1.png";
 
 function PriceGuide() {
   const data = [
@@ -46,6 +47,9 @@ function PriceGuide() {
         <h1 className="title is-1">
           Price guide
         </h1>
+        <figure className="main-photo image is-3by1">
+            <img src={price1} alt="price-guide-photo" />
+          </figure>
         <p>
           The main reason for this guide with our business is to explain the
           different factors within our trade. Our trade is different to others
