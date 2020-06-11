@@ -1,8 +1,23 @@
-import React from "react";
-// import GoogleMap from "../../components/google-map/GoogleMap";
-// import MyMapComponent from "../../components/google-map/GoogleMap";
-import Map from "../../components/map/Map"
+import React, { useState } from "react";
+import Map from "../../components/map/Map";
+
 function Contact() {
+  const [infoboxMessage, setInfoboxMessage] = useState("");
+  const [isInfoboxVisible, setIsInfoboxVisible] = useState(false);
+  const [markerLang, setMarkerLang] = useState(0);
+  const [markerLat, setMarkerLat] = useState(0);
+
+  const handleMarkerClick = (message, lang, lat) => {
+      setInfoboxMessage(message); // Message shown in info window
+      setIsInfoboxVisible(current => !current); // Show info window
+      setMarkerLang(lang + 0.006); // Y coordinate for positioning info window
+      setMarkerLat(lat - 0.0004); // X coordinate for positioning info window
+  }
+
+  const handleInfoboxClick = () => {
+      setIsInfoboxVisible(false);
+  }
+
   return (
     <div className="contact-component page">
       <div className="contact-details">
@@ -39,17 +54,23 @@ function Contact() {
         </form>
       </div>
 
-      <div style={{width: "100%", height: "300px"}}>
-        <Map 
+      <div style={{ width: "100%", height: "300px" }}>
+        <Map
           googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAz11B4GW_29EsqMIvJLG0Ay49CrFDvQ98"
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ height: `100%` }} />}
           mapElement={<div style={{ height: `100%` }} />}
+          isInfoboxVisible={isInfoboxVisible} // Show/hide info window
+          infoboxMessage={infoboxMessage} // Message shown in info window
+          handleInfoboxClick={handleInfoboxClick} // Handle closing of the info window
+          handleMarkerClick={handleMarkerClick} // Handle click on Marker component
+          infoboxPosY={markerLang} // Y coordinate for positioning info window
+          infoboxPosX={markerLat} // X coordinate for positioning info window
         />
       </div>
     </div>
   );
 }
-    // googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz11B4GW_29EsqMIvJLG0Ay49CrFDvQ98&v=3.exp&libraries=geometry,drawing,places"
+// googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz11B4GW_29EsqMIvJLG0Ay49CrFDvQ98&v=3.exp&libraries=geometry,drawing,places"
 
 export default Contact;

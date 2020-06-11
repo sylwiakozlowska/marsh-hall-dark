@@ -3,12 +3,14 @@
 @import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 @import "../node_modules/animate.css/animate.css";
 
+//override bulma's variable
 $tablet: 500px;
 $size-1: 40px;
 $size-2: 25px;
 $size-3: 20px;
 $size-4: 18px;
 $size-5: 15px;
+$input-placeholder-color: #333333;
 
 $primary: #b38a4c;
 $family-primary: family-Nunito-Light;
@@ -46,6 +48,12 @@ $text2: $color3;
     }
     h4 {
       color: black;
+    }
+    .contact-form{
+      .button{
+        background: $color3;
+        color: $color2;
+      }
     }
   }
   .footer-wrap {

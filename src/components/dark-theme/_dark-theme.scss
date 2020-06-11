@@ -1,0 +1,33 @@
+$color1: black;
+$color2: white;
+$color3: #333333;  //footer
+$color4: #a7a7a7;
+$color5: #c3c3c3;
+
+.app {
+  .page {
+    background: $secondary;
+    color: white;
+  }
+  .about-component {
+    .description {
+      background: #bdbdbd;
+    }
+  }
+  p {
+    color: #0e0606;
+  }
+  h1 {
+    color: $primary;
+  }
+  h4 {
+    color: black;
+  }
+  .footer-wrap {
+    background: #616161;
+    color: white;
+    p {
+      color: white;
+    }
+  }
+}
