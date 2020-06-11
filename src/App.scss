@@ -15,9 +15,49 @@ $family-primary: family-Nunito-Light;
 // $family-primary: family-Muli-Light;
 // $family-primary: family-Roboto-Light;
 
+$color1: black;
+$color2: white;
+$color3: #333333; //bg footer
+$color4: #d2d2d2; //bg page
+$color5: #eaeaea;//bg box 
+
+// $text1: h1;
+// $text2: p;
+
+$text1: $color3;
+$text2: $color3;
+
+.app {
+  .page {
+    background: $color4;
+    color: $color2;
+    .team-info {
+      .profile {
+        .description {
+          background: $color5;
+        }
+      }
+    }
+    p {
+      color: $text1;
+    }
+    h1 {
+      color: $text1;
+    }
+    h4 {
+      color: black;
+    }
+  }
+  .footer-wrap {
+    background: $color3;
+    color: white;
+    p {
+      color: white;
+    }
+  }
+}
+
 @import "../node_modules/bulma/bulma.sass";
-
-
 @import "./fonts/nunito/Nunito-Light.ttf";
 @import "./fonts/nunito/Nunito-Bold.ttf";
 @import "./fonts/nunito/Nunito-Italic.ttf";
@@ -36,7 +76,6 @@ $family-primary: family-Nunito-Light;
 @import "./pages/contact/contact";
 @import "./pages/price-guide/price-guide";
 
-
 *,
 *::after,
 *::before {
@@ -54,7 +93,7 @@ body {
     margin-bottom: 30px;
   }
   h1 {
-    color: $primary;
+    // color: $primary;
     margin-bottom: 24px;
     text-align: center;
   }
@@ -89,7 +128,7 @@ body {
 .multiline {
   white-space: pre-wrap;
 
-  @include mobile(){
+  @include mobile() {
     font-size: 12px;
   }
 }
@@ -97,14 +136,14 @@ body {
 //custom font-weight
 //Nunito
 @font-face {
-  font-family: 'Nunito-Light';
-     src: url('fonts/nunito/Nunito-Light.ttf');
+  font-family: "Nunito-Light";
+  src: url("fonts/nunito/Nunito-Light.ttf");
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Nunito-Bold';
-     src: url('fonts/nunito/Nunito-Bold.ttf');
+  font-family: "Nunito-Bold";
+  src: url("fonts/nunito/Nunito-Bold.ttf");
   font-weight: bold;
 }
 
@@ -134,7 +173,7 @@ body {
 //   font-weight: bold;
 // }
 
-// p { 
+// p {
 //   // font-family: 'Roboto-Bold';
 //   font-weight: bold;
 // };
