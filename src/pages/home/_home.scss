@@ -1,5 +1,5 @@
 .home-component {
-  $break: 800px;
+  $break: 895px;
   @mixin medium-bp {
     @media (max-width: #{$break}) {
       @content;
@@ -9,7 +9,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    // background: #e8e8e87a;
     text-align: center;
 
     @include medium-bp {

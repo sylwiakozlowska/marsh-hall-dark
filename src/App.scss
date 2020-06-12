@@ -10,7 +10,7 @@ $size-2: 25px;
 $size-3: 20px;
 $size-4: 18px;
 $size-5: 15px;
-$input-placeholder-color: #333333;
+$input-placeholder-color: #666666;
 
 $primary: #b38a4c;
 $family-primary: family-Nunito-Light;
@@ -146,6 +146,16 @@ body {
 //menu-nav burger display none on bigger devices than phone
 .is-hidden {
   display: none;
+
+  $break: 640px;
+  @mixin menu-nav-bp {
+    @media (min-width: #{$break}) {
+      @content;
+    }
+  }
+  @include menu-nav-bp() {
+    display: none;
+  }
 }
 
 .multiline {
