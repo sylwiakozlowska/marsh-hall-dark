@@ -23,7 +23,7 @@ $color1: #e8e8e87a;
 //dark theme
 // $color1: black;
 // $color2: white;
-// $color3: #333333; //bg footer
+$color3: #333333; //bg footer
 // $color4: #d2d2d2; //bg page
 // $color5: #eaeaea;//bg box
 
@@ -129,6 +129,13 @@ body {
     h3 {
       text-align: center;
       color: $primary;
+    }
+  }
+  .footer-wrap {
+    background: $color3;
+    color: white;
+    p {
+      color: white;
     }
   }
 
