@@ -4,7 +4,6 @@
 @import "../node_modules/animate.css/animate.css";
 
 //override bulma's variable
-// $mobile: 430px;
 $tablet: 500px;
 $size-1: 40px;
 $size-2: 25px;
@@ -18,11 +17,15 @@ $family-primary: family-Nunito-Light;
 // $family-primary: family-Muli-Light;
 // $family-primary: family-Roboto-Light;
 
+//light theme
+$color1: #e8e8e87a;
+
+//dark theme
 // $color1: black;
 // $color2: white;
 // $color3: #333333; //bg footer
 // $color4: #d2d2d2; //bg page
-// $color5: #eaeaea;//bg box 
+// $color5: #eaeaea;//bg box
 
 // $text1: $color3;
 // $text2: $color3;
@@ -95,24 +98,38 @@ body {
 }
 
 .app {
-  .page {
-    margin-bottom: 30px;
-  }
-  h1 {
-    color: $primary;
-    margin-bottom: 24px;
-    text-align: center;
-  }
-  h3 {
-    text-align: center;
-    color: $primary;
-  }
   margin: 0 20%;
   @include tablet {
     margin: 0 10%;
   }
   @include mobile {
     margin: 0;
+  }
+  .page {
+    margin-bottom: 30px;
+    .main-company-info {
+      background: $color1;
+    }
+    .testimonials-component {
+      .carousel-track,
+      .carousel-dots {
+        background: $color1;
+      }
+    }
+    .profile {
+      .description {
+        background: $color1;
+      }
+    }
+    h1 {
+      color: $primary;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
+      color: $primary;
+    }
   }
 
   // .header-wrap {
@@ -182,4 +199,4 @@ body {
 // p {
 //   // font-family: 'Roboto-Bold';
 //   font-weight: bold;
-// };
+// };  }
