@@ -1,10 +1,9 @@
-@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
-@import "../node_modules/animate.css/animate.css";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~animate.css/animate.css";
 
-//override bulma's variable
-// $mobile: 430px;
+//override bulma's variablexx
 $tablet: 500px;
 $size-1: 40px;
 $size-2: 25px;
@@ -14,9 +13,9 @@ $size-5: 15px;
 $input-placeholder-color: #333333;
 
 $primary: #b38a4c;
-$family-primary: family-Nunito-Light;
+// $family-primary: family-Nunito-Light;
 // $family-primary: family-Muli-Light;
-// $family-primary: family-Roboto-Light;
+$family-primary: family-Roboto-Light;
 
 // $color1: black;
 // $color2: white;
@@ -63,7 +62,7 @@ $family-primary: family-Nunito-Light;
 //   }
 // }
 
-@import "../node_modules/bulma/bulma.sass";
+@import "~bulma/bulma.sass";
 @import "./fonts/nunito/Nunito-Light.ttf";
 @import "./fonts/nunito/Nunito-Bold.ttf";
 @import "./fonts/nunito/Nunito-Italic.ttf";
@@ -71,16 +70,16 @@ $family-primary: family-Nunito-Light;
 @import "./fonts/Muli/Muli-Bold.ttf";
 @import "./fonts/roboto/Roboto-Light.ttf";
 @import "./fonts/roboto/Roboto-Bold.ttf";
-@import "./pages/home/home";
-@import "./components/header/header";
-@import "./components/menu-nav/menu-nav";
-@import "./components/testimonials/testimonials";
-@import "./components/footer/footer";
-@import "./pages/about/about";
-@import "./pages/services/services";
-@import "./pages/projects/projects";
-@import "./pages/contact/contact";
-@import "./pages/price-guide/price-guide";
+@import "../../pages/home/home";
+@import "../header/header";
+@import "../menu-nav/menu-nav";
+@import "../testimonials/testimonials";
+@import "../footer/footer";
+@import "../../pages/about/about";
+@import "../../pages/services/services";
+@import "../../pages/projects/projects";
+@import "../../pages/contact/contact";
+@import "../../pages/price-guide/price-guide";
 
 *,
 *::after,
@@ -141,19 +140,19 @@ body {
 
 //custom font-weight
 //Nunito
-@font-face {
-  font-family: "Nunito-Light";
-  src: url("fonts/nunito/Nunito-Light.ttf");
-  font-weight: normal;
-}
+// @font-face {
+//   font-family: "Nunito-Light";
+//   src: url("fonts/nunito/Nunito-Light.ttf");
+//   font-weight: normal;
+// }
 
-@font-face {
-  font-family: "Nunito-Bold";
-  src: url("fonts/nunito/Nunito-Bold.ttf");
-  font-weight: bold;
-}
+// @font-face {
+//   font-family: "Nunito-Bold";
+//   src: url("fonts/nunito/Nunito-Bold.ttf");
+//   font-weight: bold;
+// }
 
-//Muli
+// // Muli
 // @font-face {
 //   font-family: 'Muli-Light';
 //      src: url('fonts/Muli/Muli-Light.ttf');
@@ -167,17 +166,17 @@ body {
 // }
 
 // Roboto
-// @font-face {
-//   font-family: 'Roboto-Light';
-//      src: url('fonts/roboto/Roboto-Light.ttf');
-//   font-weight: normal;
-// }
+@font-face {
+  font-family: 'Roboto-Light';
+     src: url('./fonts/roboto/Roboto-Light.ttf');
+  font-weight: normal;
+}
 
-// @font-face {
-//   font-family: 'Roboto-Bold';
-//      src: url('fonts/roboto/Roboto-Bold.ttf');
-//   font-weight: bold;
-// }
+@font-face {
+  font-family: 'Roboto-Bold';
+     src: url('./fonts/roboto/Roboto-Bold.ttf');
+  font-weight: bold;
+}
 
 // p {
 //   // font-family: 'Roboto-Bold';

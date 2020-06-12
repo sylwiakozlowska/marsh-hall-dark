@@ -1,8 +1,36 @@
 .services-component {
+  $break: 830px;
+  $break1:1023px;
+  @mixin service-bp {
+    @media (min-width: #{$break} and (max-width: #{$break1})) {
+      @content;
+    }
+  }
+
   padding: 10px;
   .services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     h3 {
       padding: 10px;
     }
+    .service-images {
+      padding: 10px;
+
+      @include mobile() {
+        width: 100%;
+      }
+      @include tablet() {
+        width: 50%;
+      }
+      @include desktop() {
+        width: 33%;
+      }
+      @include service-bp() {
+        width: 50%;
+      }
+    }
+    
   }
 }

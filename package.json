@@ -1,7 +1,7 @@
 {
   "name": "marsh-hall",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://sylwiakozlowska.github.io/marsh-hall",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",

@@ -1,6 +1,7 @@
 import React from "react";
 import Testimonials from "../../components/testimonials/Testimonials";
-import colourChart from "./assets/homepic800x600.png";
+// import colourChart from "./assets/homepic800x600.png";
+import colourChart from "./assets/home640by480.jpg";
 
 function Home() {
   return (

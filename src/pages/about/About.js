@@ -1,7 +1,10 @@
 import React from "react";
-import profile1 from "./assets/profile1.png";
-import profile2 from "./assets/profile2.png";
-import profile3 from "./assets/profile3.png";
+// import profile1 from "./assets/profile1.png";
+import profile1 from "./assets/profile1_800by600.jpg";
+// import profile2 from "./assets/profile2.png";
+import profile2 from "./assets/profile2_800by600.jpg";
+// import profile3 from "./assets/profile3.png";
+import profile3 from "./assets/profile3_800by600.jpg";
 
 function About() {
   return (
@@ -29,7 +32,7 @@ function About() {
       <div className="team-info">
         <div className="profile">
           <h3 className="title is-3">Graeme</h3>
-          <figure className="image is-5by3">
+          <figure className="image is-4by3">
             <img src={profile1} alt="graeme's profile" />
           </figure>
           <p className="description">
@@ -47,7 +50,7 @@ function About() {
         </div>
         <div className="profile">
           <h3 className="title is-3">Olly</h3>
-          <figure className="image is-5by3">
+          <figure className="image is-4by3">
             <img src={profile2} alt="olly's profile" />
           </figure>
           <p className="description">
@@ -62,7 +65,7 @@ function About() {
         </div>
         <div className="profile">
           <h3 className="title is-3">Cristi</h3>
-          <figure className="image is-5by3">
+          <figure className="image is-4by3">
             <img src={profile3} alt="cristi's profile" />
           </figure>
           <p className="description">

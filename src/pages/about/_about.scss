@@ -1,10 +1,10 @@
-$break: 800px;
+.about-component {
+  $break: 769px;
 @mixin medium-bp {
-  @media (max-width: #{$break}) {
+  @media (min-width: #{$break}) {
     @content;
   }
 }
-.about-component {
   .description {
     text-align: center;
     padding: 10px;
@@ -18,11 +18,12 @@ $break: 800px;
     flex-wrap: wrap;
     .profile {
       .description {
-        background: #F8F9FA;
+        background: #e8e8e87a;
       }
       padding: 10px;
+
       @include medium-bp() {
-        width: 100%;
+        width: 50%;
       }
       @include desktop() {
         width: 50%;
