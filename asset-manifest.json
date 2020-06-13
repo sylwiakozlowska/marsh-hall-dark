@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/marsh-hall-dark/static/css/main.d036de50.chunk.css",
+    "main.js": "/marsh-hall-dark/static/js/main.8cf914d0.chunk.js",
+    "main.js.map": "/marsh-hall-dark/static/js/main.8cf914d0.chunk.js.map",
+    "runtime-main.js": "/marsh-hall-dark/static/js/runtime-main.07620883.js",
+    "runtime-main.js.map": "/marsh-hall-dark/static/js/runtime-main.07620883.js.map",
+    "static/css/2.aa407cf3.chunk.css": "/marsh-hall-dark/static/css/2.aa407cf3.chunk.css",
+    "static/js/2.4fcb50df.chunk.js": "/marsh-hall-dark/static/js/2.4fcb50df.chunk.js",
+    "static/js/2.4fcb50df.chunk.js.map": "/marsh-hall-dark/static/js/2.4fcb50df.chunk.js.map",
+    "index.html": "/marsh-hall-dark/index.html",
+    "precache-manifest.afdc97b2a9189ae02f3abff47896fec3.js": "/marsh-hall-dark/precache-manifest.afdc97b2a9189ae02f3abff47896fec3.js",
+    "service-worker.js": "/marsh-hall-dark/service-worker.js",
+    "static/css/2.aa407cf3.chunk.css.map": "/marsh-hall-dark/static/css/2.aa407cf3.chunk.css.map",
+    "static/css/main.d036de50.chunk.css.map": "/marsh-hall-dark/static/css/main.d036de50.chunk.css.map",
+    "static/js/2.4fcb50df.chunk.js.LICENSE.txt": "/marsh-hall-dark/static/js/2.4fcb50df.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/marsh-hall-dark/static/media/fa-solid-900.ec763292.svg",
+    "static/media/colorconsultation_480by360.jpg": "/marsh-hall-dark/static/media/colorconsultation_480by360.cb5e3cea.jpg",
+    "static/media/floor1_480by360.jpg": "/marsh-hall-dark/static/media/floor1_480by360.c14bc462.jpg",
+    "static/media/home640by480.jpg": "/marsh-hall-dark/static/media/home640by480.3e9237a4.jpg",
+    "static/media/icon.svg": "/marsh-hall-dark/static/media/icon.32e6ee08.svg",
+    "static/media/interior_480by360.jpg": "/marsh-hall-dark/static/media/interior_480by360.e01bf756.jpg",
+    "static/media/logo.png": "/marsh-hall-dark/static/media/logo.101bbef7.png",
+    "static/media/price1_1132by566.jpg": "/marsh-hall-dark/static/media/price1_1132by566.6cb2dfe9.jpg",
+    "static/media/profile1_800by600.jpg": "/marsh-hall-dark/static/media/profile1_800by600.4a80b972.jpg",
+    "static/media/profile2_800by600.jpg": "/marsh-hall-dark/static/media/profile2_800by600.1590185d.jpg",
+    "static/media/profile3_800by600.jpg": "/marsh-hall-dark/static/media/profile3_800by600.9a0c99d3.jpg",
+    "static/media/roof5_480by360.jpg": "/marsh-hall-dark/static/media/roof5_480by360.22212773.jpg",
+    "static/media/wallpaper1_480by360.jpg": "/marsh-hall-dark/static/media/wallpaper1_480by360.f1c35c8d.jpg",
+    "static/media/window1_480by360.jpg": "/marsh-hall-dark/static/media/window1_480by360.8d39835e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07620883.js",
+    "static/css/2.aa407cf3.chunk.css",
+    "static/js/2.4fcb50df.chunk.js",
+    "static/css/main.d036de50.chunk.css",
+    "static/js/main.8cf914d0.chunk.js"
+  ]
+}
