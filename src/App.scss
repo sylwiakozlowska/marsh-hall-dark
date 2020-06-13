@@ -10,61 +10,36 @@ $size-2: 25px;
 $size-3: 20px;
 $size-4: 18px;
 $size-5: 15px;
-$input-placeholder-color: #666666;
+$input-placeholder-color: #969191;
 
-$primary: #b38a4c;
+// $primary: #b38a4c;
 $family-primary: family-Nunito-Light;
 // $family-primary: family-Muli-Light;
 // $family-primary: family-Roboto-Light;
 
 //light theme
-$color1: #e8e8e87a;
 
-//dark theme
-// $color1: black;
-// $color2: white;
-// $color3: #333333; //bg footer
-// $color4: #d2d2d2; //bg page
-// $color5: #eaeaea;//bg box
+$color1: black;
+$color2: white;
+$color3: #b38a4c;  //gold
+$color4: #F4F4F4; //home bg 
+$color5: #d2d2d2; //bg page
+$color6: #333333; //bg footer
 
-// $text1: $color3;
-// $text2: $color3;
 
-// .app {
-//   .page {
-//     background: $color4;
-//     color: $color2;
-//     .team-info {
-//       .profile {
-//         .description {
-//           background: $color5;
-//         }
-//       }
-//     }
-//     p {
-//       color: $text1;
-//     }
-//     h1 {
-//       color: $text1;
-//     }
-//     h4 {
-//       color: black;
-//     }
-//     .contact-form{
-//       .button{
-//         background: $color3;
-//         color: $color2;
-//       }
-//     }
-//   }
-//   .footer-wrap {
-//     background: $color3;
-//     color: white;
-//     p {
-//       color: white;
-//     }
-//   }
-// }
+$text1: $color1;
+$text2: $color2;
+$text3: $color3;
+$bg1: $color4;   //primary bg
+$bg2: $color5;  //sec bg
+$bg3: $color6; //bg footer dark
+$bg4: $color2; //bg footer white
+
+$title-color: $color3;
+
+h1, h2, h3, h4 {
+  color: $color3
+}
 
 @import "../node_modules/bulma/bulma.sass";
 @import "./fonts/nunito/Nunito-Light.ttf";
@@ -107,28 +82,12 @@ body {
   }
   .page {
     margin-bottom: 30px;
-    .main-company-info {
-      background: $color1;
-    }
-    .testimonials-component {
-      .carousel-track,
-      .carousel-dots {
-        background: $color1;
-      }
-    }
-    .profile {
-      .description {
-        background: $color1;
-      }
-    }
     h1 {
-      color: $primary;
       margin-bottom: 24px;
       text-align: center;
     }
     h3 {
       text-align: center;
-      color: $primary;
     }
   }
 

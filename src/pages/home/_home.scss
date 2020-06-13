@@ -5,11 +5,18 @@
       @content;
     }
   }
-  .main-company-info{
+  .testimonials-component {
+    .carousel-track,
+    .carousel-dots {
+      background: $bg1;
+    }
+  }
+  .main-company-info {
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
+    background: $bg1;
 
     @include medium-bp {
       flex-direction: column-reverse;
