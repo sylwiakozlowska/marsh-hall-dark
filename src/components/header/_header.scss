@@ -8,6 +8,16 @@ $desktop-width: 1024px;
     display: none;
   }
 
+  .hamburger {
+    outline: none;
+    .hamburger-box {
+      height: 0;
+      .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        width: 30px;
+      }
+    }
+  }
+
   .items {
     display: flex;
     align-items: center;

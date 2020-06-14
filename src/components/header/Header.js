@@ -30,10 +30,17 @@ function Header() {
           />
           <p className="subtitle is-3">Painting &amp; Decorating</p>
         </div>
-        <i
-          className="menu-burger fas fa-bars fa-2x is-hidden-tablet"
+        <button
+          className={`is-hidden-tablet hamburger hamburger--squeeze ${menuOpen ? 'is-active' : ''}`}
+          type="button"
+          aria-label="Menu"
+          aria-controls="navigation"
           onClick={toggleMenuDrawer}
-        />
+        >
+          <span className="hamburger-box">
+            <span className="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
       <div className="menu-bar-container">
         <MenuNav items={items} shown={menuOpen} />
