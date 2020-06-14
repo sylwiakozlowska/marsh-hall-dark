@@ -1,41 +1,59 @@
-.menu-nav-component {
-  display: flex;
-  justify-content: center;
-  .menu {
+.menu-bar-component {
+  position: relative;
+
+  @include tablet() {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+    justify-content: center;
 
-    @include mobile() {
-      flex-direction: column;
-      align-items: center;
-      background: #f7f7f7;
+    .menu {
+      display: flex;
+      justify-content: space-around;
       width: 100%;
-    }
-    .nav-list {
-      list-style: none;
-      padding: 10px;
+      margin: 20px 0px;
+      white-space: nowrap;
 
-      @include desktop() {
-        padding: 10px 25px;
-      }
-      .nav-link {
-        text-decoration: none;
-        color: black;
+      .nav-item {
+        list-style: none;
 
-        @include mobile() {
-          color: black;
-          justify-content: center;
-          text-transform: uppercase;
+        .nav-link {
+          text-decoration: none;
+          color: $text1;
         }
       }
-      .nav-link:hover {
-        @include mobile() {
-          background: rgba(241, 239, 239, 0.858);
-          color: grey;
+    }
+  }
+
+  @include mobile() {
+    .animation-wrapper {
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .menu {
+      justify-content: center;
+      background: $bg6;
+      border-bottom: 20px solid $color3;
+      flex-direction: column;
+      width: 100%;
+
+      .nav-item {
+        list-style: none;
+        width: 100%;
+        text-align: center;
+
+        .active {
+          background: $color7;
+        }
+
+        .nav-link {
+          display: block;
+          color: $text2;
+          text-decoration: none;
+          text-transform: uppercase;
           font-weight: bold;
-          padding: 10px;
-          border-radius: 5px;
+          padding: 10px 0;
         }
       }
     }

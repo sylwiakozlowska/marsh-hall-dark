@@ -1,7 +1,12 @@
-@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
-@import "../node_modules/animate.css/animate.css";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~animate.css/animate.css";
+@import "~hamburgers/dist/hamburgers.css";
+
+:root {
+  --animate-duration: 0.5s;
+}
 
 //override bulma's variable
 $tablet: 500px;
@@ -25,7 +30,8 @@ $color3: #b38a4c;  //gold
 $color4: #F4F4F4; //home bg 
 $color5: #d2d2d2; //bg page
 $color6: #333333; //bg footer
-
+$color7: #909090;  //menu drop down avtive item
+$color8: rgb(107, 104, 104); //menu bg
 
 $text1: $color1;
 $text2: $color2;
@@ -34,7 +40,8 @@ $bg1: $color4;   //primary bg
 $bg2: $color5;  //sec bg
 $bg3: $color6; //bg footer dark
 $bg4: $color2; //bg footer white
-
+$bg5: $color7;
+$bg6: $color8;
 $title-color: $color3;
 
 h1, h2, h3, h4 {
@@ -100,21 +107,6 @@ body {
   // .footer-wrap {
   //   border: 1px solid purple;
   // }
-}
-
-//menu-nav burger display none on bigger devices than phone
-.is-hidden {
-  display: none;
-
-  $break: 640px;
-  @mixin menu-nav-bp {
-    @media (min-width: #{$break}) {
-      @content;
-    }
-  }
-  @include menu-nav-bp() {
-    display: none;
-  }
 }
 
 .multiline {

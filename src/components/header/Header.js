@@ -8,15 +8,26 @@ function Header() {
     setMenuOpen((state) => !state);
   };
 
-  const menuClass = menuOpen
-    ? "animate__animated animate__slideInDown"
-    : "is-hidden-mobile";
+  const items = [
+    { title: "Home", link: "/home" },
+    { title: "About us", link: "/about" },
+    { title: "Services", link: "/services" },
+    { title: "Projects", link: "/projects" },
+    { title: "Price guide", link: "/price-guide" },
+    { title: "Contact us", link: "/contact" },
+  ];
+
   return (
     <div className="header-component">
       <div className="items">
         <div className="spacer"></div>
         <div className="logo-wrap">
-          <img className="logo" src={logo} width="400px" alt="logo-marsh-hall" />
+          <img
+            className="logo"
+            src={logo}
+            width="400px"
+            alt="logo-marsh-hall"
+          />
           <p className="subtitle is-3">Painting &amp; Decorating</p>
         </div>
         <i
@@ -24,10 +35,8 @@ function Header() {
           onClick={toggleMenuDrawer}
         />
       </div>
-      <div style={{ overflow: "hidden" }}>
-        <div className={menuClass}>
-          <MenuNav />
-        </div>
+      <div className="menu-bar-container">
+        <MenuNav items={items} shown={menuOpen} />
       </div>
     </div>
   );

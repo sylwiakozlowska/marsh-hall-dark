@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-function MenuNav() {
+function MenuNav({ shown }) {
   const items = [
     { title: "Home", link: "/home" },
     { title: "About us", link: "/about" },
@@ -11,16 +11,26 @@ function MenuNav() {
     { title: "Contact us", link: "/contact" },
   ];
 
+  const animationClass = shown
+    ? "animate__animated animate__slideInDown"
+    : "animate__animated animate__slideOutUp";
+
   const li = items.map(({ link, title }) => (
-    <li key={link} className="nav-list">
-      <Link to={link} className="nav-link">
+    <li key={link} className="nav-item">
+      <NavLink to={link} activeClassName="active" className={'nav-link'}>
         {title}
-      </Link>
+      </NavLink>
     </li>
   ));
+
   return (
-    <nav className="menu-nav-component">
-      <ul className="menu">{li}</ul>
+    <nav className="menu-bar-component">
+      <div className="animation-wrapper">
+        <div className={animationClass}>
+          <ul className="menu is-hidden-tablet">{li}</ul>
+        </div>
+      </div>
+      <ul className="menu is-hidden-mobile">{li}</ul>
     </nav>
   );
 }
