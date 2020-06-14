@@ -12,27 +12,29 @@ $size-5: 15px;
 $input-placeholder-color: #969191;
 
 // $primary: #b38a4c;
-$family-primary: family-Nunito-Light;
-// $family-primary: family-Muli-Light;
-// $family-primary: family-Roboto-Light;
+// $family-primary: Nunito-Light;
+$family-primary: Muli-Light;
+// $family-primary: Roboto-Light;
 
 //light theme
 $color1: black;
 $color2: white;
-$color3: #b38a4c; 
-$color4: #F4F4F4; //home bg 
-$color5: #d2d2d2; //bg page
+$color3: #b38a4c;
+$color4: #f4f4f4; //home bg for paragraph
+$color5:#d8d8d8; //bg page/ main bg page dark theme
 $color6: #333333; //bg footer
 $color7: rgb(107, 104, 104); //menu bg
-$color8: #909090;  //menu dropdown avtive item
+$color8: #909090; //menu dropdown avtive item
+
 
 $text1: $color1;
 $text2: $color2;
 $text3: $color3;
-$bg1: $color4;   //primary bg
-$bg2: $color5;  //sec bg
-$bg3: $color6; //bg footer dark
-$bg4: $color2; //bg footer white
+$bg1: $color4; //primary bg / for paragraph
+$bg2: $color5; //sec bg / main bg for page
+$bg3: $color6; //bg footer
+$bg4: $color2; //app bg white
+
 
 $dropdownBg1: $color7; // main bg
 $dropdownBg2: $color3; // bottom border footer
@@ -41,11 +43,14 @@ $dropdownText1: $color1; // menu bar
 $dropdownText2: $color2; // menu dropdown
 
 // buma overrides
-$title-color: $color3;
+$title-color: $color1;
 
 // html defaults
-h1, h2, h3, h4 {
-  color: $color3
+h1,
+h2,
+h3,
+h4 {
+  color: $color1;
 }
 
 // imports
@@ -101,6 +106,7 @@ body {
     margin: 0;
   }
   .page {
+    background: $bg2;
     margin-bottom: 30px;
     h1 {
       margin-bottom: 24px;
@@ -108,6 +114,16 @@ body {
     }
     h3 {
       text-align: center;
+    }
+  }
+  .home-component{
+background: $bg4;
+  }
+  .footer-wrap {
+    color: $text2;
+    background: $bg3;
+    .contact-title{
+      color: $text2;
     }
   }
 }
@@ -122,30 +138,30 @@ body {
 
 //custom font-weight
 //Nunito
-@font-face {
-  font-family: "Nunito-Light";
-  src: url("fonts/nunito/Nunito-Light.ttf");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Nunito-Bold";
-  src: url("fonts/nunito/Nunito-Bold.ttf");
-  font-weight: bold;
-}
-
-//Muli
 // @font-face {
-//   font-family: 'Muli-Light';
-//      src: url('fonts/Muli/Muli-Light.ttf');
+//   font-family: "Nunito-Light";
+//   src: url("fonts/nunito/Nunito-Light.ttf");
 //   font-weight: normal;
 // }
 
 // @font-face {
-//   font-family: 'Muli-Bold';
-//      src: url('fonts/Muli/Muli-Bold.ttf');
+//   font-family: "Nunito-Bold";
+//   src: url("fonts/nunito/Nunito-Bold.ttf");
 //   font-weight: bold;
 // }
+
+//Muli
+@font-face {
+  font-family: 'Muli-Light';
+     src: url('fonts/Muli/Muli-Light.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Muli-Bold';
+     src: url('fonts/Muli/Muli-Bold.ttf');
+  font-weight: bold;
+}
 
 // Roboto
 // @font-face {

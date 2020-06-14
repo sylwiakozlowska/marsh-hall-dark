@@ -1,10 +1,11 @@
 .home-component {
-  $break: 895px;
+  $break: 920px;
   @mixin medium-bp {
     @media (max-width: #{$break}) {
       @content;
     }
   }
+    background: $bg4;
   .testimonials-component {
     .carousel-track,
     .carousel-dots {
