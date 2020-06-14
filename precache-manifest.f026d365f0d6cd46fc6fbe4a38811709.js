@@ -1,39 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f56084fe7eef7e3e851df9d6ba9a63a4",
+    "revision": "a15b01b974fc1889cf2a20cc8cb95e8b",
     "url": "/marsh-hall-dark/index.html"
   },
   {
-    "revision": "3c045ba271387bdeef03",
-    "url": "/marsh-hall-dark/static/css/2.aa407cf3.chunk.css"
+    "revision": "52fbece7bac2380e9391",
+    "url": "/marsh-hall-dark/static/css/2.d60862c6.chunk.css"
   },
   {
-    "revision": "da1eb553518746b08de3",
-    "url": "/marsh-hall-dark/static/css/main.d036de50.chunk.css"
+    "revision": "f28c9887397b6c9329f6",
+    "url": "/marsh-hall-dark/static/css/main.ee799fa6.chunk.css"
   },
   {
-    "revision": "3c045ba271387bdeef03",
-    "url": "/marsh-hall-dark/static/js/2.4fcb50df.chunk.js"
+    "revision": "52fbece7bac2380e9391",
+    "url": "/marsh-hall-dark/static/js/2.d50638b5.chunk.js"
   },
   {
     "revision": "876e403427d7be82fb4e8ac24123aaf3",
-    "url": "/marsh-hall-dark/static/js/2.4fcb50df.chunk.js.LICENSE.txt"
+    "url": "/marsh-hall-dark/static/js/2.d50638b5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "da1eb553518746b08de3",
-    "url": "/marsh-hall-dark/static/js/main.8cf914d0.chunk.js"
+    "revision": "f28c9887397b6c9329f6",
+    "url": "/marsh-hall-dark/static/js/main.5822601e.chunk.js"
   },
   {
     "revision": "388baabaa250259bcf29",
     "url": "/marsh-hall-dark/static/js/runtime-main.07620883.js"
   },
   {
-    "revision": "7074597347e3d802e869cb69602a1657",
-    "url": "/marsh-hall-dark/static/media/Nunito-Bold.70745973.ttf"
+    "revision": "c2060efcee96464d06d13b11770fc8c5",
+    "url": "/marsh-hall-dark/static/media/Muli-Bold.c2060efc.ttf"
   },
   {
-    "revision": "be78e14e73ff5f2c46457ad6018f9c3b",
-    "url": "/marsh-hall-dark/static/media/Nunito-Light.be78e14e.ttf"
+    "revision": "9ea7b84129925c4fd62e3dfc9bae766b",
+    "url": "/marsh-hall-dark/static/media/Muli-Light.9ea7b841.ttf"
   },
   {
     "revision": "cb5e3cea83701793d92da3cc4ba42fb0",

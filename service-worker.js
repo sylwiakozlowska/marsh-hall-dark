@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/marsh-hall-dark/precache-manifest.afdc97b2a9189ae02f3abff47896fec3.js"
+  "/marsh-hall-dark/precache-manifest.f026d365f0d6cd46fc6fbe4a38811709.js"
 );
 
 self.addEventListener('message', (event) => {
