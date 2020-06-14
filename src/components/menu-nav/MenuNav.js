@@ -1,23 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function MenuNav({ shown }) {
-  const items = [
-    { title: "Home", link: "/home" },
-    { title: "About us", link: "/about" },
-    { title: "Services", link: "/services" },
-    { title: "Projects", link: "/projects" },
-    { title: "Price guide", link: "/price-guide" },
-    { title: "Contact us", link: "/contact" },
-  ];
-
+function MenuNav({ items, shown, close}) {
   const animationClass = shown
     ? "animate__animated animate__slideInDown"
     : "animate__animated animate__slideOutUp";
 
   const li = items.map(({ link, title }) => (
     <li key={link} className="nav-item">
-      <NavLink to={link} activeClassName="active" className={'nav-link'}>
+      <NavLink
+        to={link}
+        activeClassName="active"
+        className={"nav-link"}
+        onClick={close}
+      >
         {title}
       </NavLink>
     </li>

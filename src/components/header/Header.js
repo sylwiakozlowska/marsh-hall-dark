@@ -43,7 +43,7 @@ function Header() {
         </button>
       </div>
       <div className="menu-bar-container">
-        <MenuNav items={items} shown={menuOpen} />
+        <MenuNav items={items} shown={menuOpen} close={toggleMenuDrawer}/>
       </div>
     </div>
   );
