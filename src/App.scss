@@ -1,7 +1,6 @@
-@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
-@import "../node_modules/animate.css/animate.css";
+:root {
+  --animate-duration: 0.5s;
+}
 
 //override bulma's variable
 $tablet: 500px;
@@ -10,63 +9,56 @@ $size-2: 25px;
 $size-3: 20px;
 $size-4: 18px;
 $size-5: 15px;
-$input-placeholder-color: #666666;
+$input-placeholder-color: #969191;
 
-$primary: #b38a4c;
+// $primary: #b38a4c;
 $family-primary: family-Nunito-Light;
 // $family-primary: family-Muli-Light;
 // $family-primary: family-Roboto-Light;
 
 //light theme
-$color1: #e8e8e87a;
+$color1: black;
+$color2: white;
+$color3: #b38a4c; 
+$color4: #F4F4F4; //home bg 
+$color5: #d2d2d2; //bg page
+$color6: #333333; //bg footer
+$color7: rgb(107, 104, 104); //menu bg
+$color8: #909090;  //menu dropdown avtive item
 
-//dark theme
-// $color1: black;
-// $color2: white;
-$color3: #333333; //bg footer
-// $color4: #d2d2d2; //bg page
-// $color5: #eaeaea;//bg box
+$text1: $color1;
+$text2: $color2;
+$text3: $color3;
+$bg1: $color4;   //primary bg
+$bg2: $color5;  //sec bg
+$bg3: $color6; //bg footer dark
+$bg4: $color2; //bg footer white
 
-// $text1: $color3;
-// $text2: $color3;
+$dropdownBg1: $color7; // main bg
+$dropdownBg2: $color3; // bottom border footer
+$dropdownBg3: $color8; // active item bg
+$dropdownText1: $color1; // menu bar
+$dropdownText2: $color2; // menu dropdown
 
-// .app {
-//   .page {
-//     background: $color4;
-//     color: $color2;
-//     .team-info {
-//       .profile {
-//         .description {
-//           background: $color5;
-//         }
-//       }
-//     }
-//     p {
-//       color: $text1;
-//     }
-//     h1 {
-//       color: $text1;
-//     }
-//     h4 {
-//       color: black;
-//     }
-//     .contact-form{
-//       .button{
-//         background: $color3;
-//         color: $color2;
-//       }
-//     }
-//   }
-//   .footer-wrap {
-//     background: $color3;
-//     color: white;
-//     p {
-//       color: white;
-//     }
-//   }
-// }
+// buma overrides
+$title-color: $color3;
 
+// html defaults
+h1, h2, h3, h4 {
+  color: $color3
+}
+
+// imports
+@import "~animate.css/animate.css";
+@import "~hamburgers/dist/hamburgers.css";
 @import "../node_modules/bulma/bulma.sass";
+
+// icons
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+// fonts
 @import "./fonts/nunito/Nunito-Light.ttf";
 @import "./fonts/nunito/Nunito-Bold.ttf";
 @import "./fonts/nunito/Nunito-Italic.ttf";
@@ -74,6 +66,8 @@ $color3: #333333; //bg footer
 @import "./fonts/Muli/Muli-Bold.ttf";
 @import "./fonts/roboto/Roboto-Light.ttf";
 @import "./fonts/roboto/Roboto-Bold.ttf";
+
+// pages/components
 @import "./pages/home/home";
 @import "./components/header/header";
 @import "./components/menu-nav/menu-nav";
@@ -90,6 +84,7 @@ $color3: #333333; //bg footer
 *::before {
   box-sizing: border-box;
 }
+
 html,
 body {
   font-size: 18px;
@@ -107,61 +102,13 @@ body {
   }
   .page {
     margin-bottom: 30px;
-    .main-company-info {
-      background: $color1;
-    }
-    .testimonials-component {
-      .carousel-track,
-      .carousel-dots {
-        background: $color1;
-      }
-    }
-    .profile {
-      .description {
-        background: $color1;
-      }
-    }
     h1 {
-      color: $primary;
       margin-bottom: 24px;
       text-align: center;
     }
     h3 {
       text-align: center;
-      color: $primary;
     }
-  }
-  .footer-wrap {
-    background: $color3;
-    color: white;
-    p {
-      color: white;
-    }
-  }
-
-  // .header-wrap {
-  //   border: 1px solid yellow;
-  // }
-  // .content-wrap {
-  //   border: 1px solid orchid;
-  // }
-  // .footer-wrap {
-  //   border: 1px solid purple;
-  // }
-}
-
-//menu-nav burger display none on bigger devices than phone
-.is-hidden {
-  display: none;
-
-  $break: 640px;
-  @mixin menu-nav-bp {
-    @media (min-width: #{$break}) {
-      @content;
-    }
-  }
-  @include menu-nav-bp() {
-    display: none;
   }
 }
 

@@ -29,10 +29,10 @@ export default () => {
     arrows: false,
   };
 
-  const sliderContent = testimonials.map((el) => (
-    <div className="testimonials-content">
+  const sliderContent = testimonials.map((el, i) => (
+    <div className="testimonials-content" key={i}>
       <i className="quotes fas fa-quote-right fa-1x"></i>
-      <p>{el.content}</p>
+      <p className="testimonial">{el.content}</p>
       <p className="title is-4">{el.by}</p>
     </div>
   ));

@@ -1,41 +1,65 @@
-.menu-nav-component {
-  display: flex;
-  justify-content: center;
-  .menu {
+.menu-bar-component {
+  position: relative;
+
+  @include tablet() {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+    justify-content: center;
 
-    @include mobile() {
-      flex-direction: column;
-      align-items: center;
-      background: #f7f7f7;
+    .menu {
+      display: flex;
+      justify-content: center;
       width: 100%;
-    }
-    .nav-list {
-      list-style: none;
-      padding: 10px;
+      margin: 20px 0px;
+      text-align: center;
+      // white-space: nowrap;
 
-      @include desktop() {
-        padding: 10px 25px;
-      }
-      .nav-link {
-        text-decoration: none;
-        color: black;
+      .nav-item {
+        list-style: none;
+        padding: 0 10px;
 
-        @include mobile() {
-          color: black;
-          justify-content: center;
-          text-transform: uppercase;
+        .nav-link {
+          text-decoration: none;
+          color: $dropdownText1;
         }
       }
-      .nav-link:hover {
-        @include mobile() {
-          background: rgba(241, 239, 239, 0.858);
-          color: grey;
+    }
+  }
+
+  @include mobile() {
+    .animation-wrapper {
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      z-index: 10;
+      // bit of a hack to get around animation container always being present due
+      // to the way animate.css hides the drawer
+      pointer-events: none;
+    }
+
+    .menu {
+      pointer-events: all;
+      justify-content: center;
+      background: $dropdownBg1;
+      border-bottom: 20px solid $dropdownBg2;
+      flex-direction: column;
+      width: 100%;
+
+      .nav-item {
+        list-style: none;
+        width: 100%;
+        text-align: center;
+
+        .active {
+          background: $dropdownBg3;
+        }
+
+        .nav-link {
+          display: block;
+          color: $dropdownText2;
+          text-decoration: none;
+          text-transform: uppercase;
           font-weight: bold;
-          padding: 10px;
-          border-radius: 5px;
+          padding: 10px 0;
         }
       }
     }

@@ -3,31 +3,48 @@ import logo from "./logo.png";
 import MenuNav from "../menu-nav/MenuNav";
 
 function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  // need null for the inital menu state
+  const [menuOpen, setMenuOpen] = useState(null); 
   const toggleMenuDrawer = () => {
     setMenuOpen((state) => !state);
   };
 
-  const menuClass = menuOpen
-    ? "animate__animated animate__slideInDown"
-    : "is-hidden-mobile";
+  const items = [
+    { title: "Home", link: "/home" },
+    { title: "About us", link: "/about" },
+    { title: "Services", link: "/services" },
+    { title: "Projects", link: "/projects" },
+    { title: "Price guide", link: "/price-guide" },
+    { title: "Contact us", link: "/contact" },
+  ];
+
   return (
     <div className="header-component">
       <div className="items">
         <div className="spacer"></div>
         <div className="logo-wrap">
-          <img className="logo" src={logo} width="400px" alt="logo-marsh-hall" />
+          <img
+            className="logo"
+            src={logo}
+            width="400px"
+            alt="logo-marsh-hall"
+          />
           <p className="subtitle is-3">Painting &amp; Decorating</p>
         </div>
-        <i
-          className="menu-burger fas fa-bars fa-2x is-hidden-tablet"
+        <button
+          className={`is-hidden-tablet hamburger hamburger--squeeze ${menuOpen ? 'is-active' : ''}`}
+          type="button"
+          aria-label="Menu"
+          aria-controls="navigation"
           onClick={toggleMenuDrawer}
-        />
+        >
+          <span className="hamburger-box">
+            <span className="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
-      <div style={{ overflow: "hidden" }}>
-        <div className={menuClass}>
-          <MenuNav />
-        </div>
+      <div className="menu-bar-container">
+        <MenuNav items={items} shown={menuOpen} close={toggleMenuDrawer}/>
       </div>
     </div>
   );

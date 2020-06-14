@@ -4,36 +4,49 @@ $tablet-width: 768px;
 $desktop-width: 1024px;
 
 .header-component {
+  .hidden {
+    display: none;
+  }
+
+  .hamburger {
+    outline: none;
+    padding: 0 10px 0 0;
+    .hamburger-box {
+      height: 0;
+      .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        width: 30px;
+        transition-duration: 0.25s;
+      }
+    }
+  }
+
   .items {
     display: flex;
     align-items: center;
     flex-direction: column;
     border-bottom: 1px solid black;
     padding-bottom: 20px;
+    text-align: center;
 
     @include mobile() {
       border-bottom: none;
       flex-direction: row;
-      justify-content: center;
       justify-content: space-between;
-      padding-right: 40px;
     }
     @include mobile() {
       .spacer {
-        width: 30px;
-        margin-left: 20px;
+        width: 35px;
+        margin-left: 0 20px;
       }
     }
     .menu-burger {
-      width: 30px;
+      width: 35px;
       margin-right: 20px;
     }
-    .fa-bars:before{
-      padding-left: 10px;
-    }
+
     .logo {
       max-width: 300px;
-      margin-top: 20px;
+      padding: 20px 20px 0 20px;
 
       @include mobile() {
         max-width: 250px;
@@ -41,9 +54,7 @@ $desktop-width: 1024px;
       }
     }
     .subtitle {
-      color: black;
-      text-align: center;
-
+      color: $color1;
       @include mobile() {
         display: none;
       }

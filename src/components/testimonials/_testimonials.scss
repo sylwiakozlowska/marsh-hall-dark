@@ -1,22 +1,26 @@
 .testimonials-component {
   margin: 20px 0;
-  // .carousel-track {
-  //   background: #e8e8e87a;
-  // }
+  .carousel-track {
+    background: grey;
+  }
   .carousel-dots {
     padding: 15px;
-    // background: #e8e8e87a;
+    background: grey;
     margin: 0;
   }
   .testimonials-content {
-    // background: #e8e8e87a;
+    outline: none;
     text-align: center;
+    .testimonial{
+      padding: 10px;
+    }
     .quotes {
       display: inline-block;
-      margin: 10px 0 10px 0;
+      margin: 10px;
     }
     p {
       margin-top: 15px;
+      color: black;
     }
   }
 }
