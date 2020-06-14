@@ -31,9 +31,13 @@
       overflow: hidden;
       width: 100%;
       z-index: 10;
+      // bit of a hack to get around animation container always being present due
+      // to the way animate.css hides the drawer
+      pointer-events: none;
     }
 
     .menu {
+      pointer-events: all;
       justify-content: center;
       background: $dropdownBg1;
       border-bottom: 20px solid $dropdownBg2;

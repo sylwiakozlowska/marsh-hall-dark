@@ -10,10 +10,12 @@ $desktop-width: 1024px;
 
   .hamburger {
     outline: none;
+    padding: 0 10px 0 0;
     .hamburger-box {
       height: 0;
       .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
         width: 30px;
+        transition-duration: 0.25s;
       }
     }
   }

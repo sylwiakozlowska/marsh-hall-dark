@@ -3,7 +3,8 @@ import logo from "./logo.png";
 import MenuNav from "../menu-nav/MenuNav";
 
 function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  // need null for the inital menu state
+  const [menuOpen, setMenuOpen] = useState(null); 
   const toggleMenuDrawer = () => {
     setMenuOpen((state) => !state);
   };

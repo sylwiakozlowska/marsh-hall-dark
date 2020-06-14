@@ -1,10 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function MenuNav({ items, shown, close}) {
-  const animationClass = shown
-    ? "animate__animated animate__slideInDown"
-    : "animate__animated animate__slideOutUp";
+function MenuNav({ items, shown, close }) {
+  let animationClass;
+  
+  if (shown === true) {
+    animationClass = "animate__animated animate__slideInDown";
+  } else if (shown === false) {
+    animationClass = "animate__animated animate__slideOutUp";
+  } else {
+    animationClass = "hidden";
+  }
 
   const li = items.map(({ link, title }) => (
     <li key={link} className="nav-item">
