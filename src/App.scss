@@ -1,9 +1,3 @@
-@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "~@fortawesome/fontawesome-free/scss/solid.scss";
-@import "~@fortawesome/fontawesome-free/scss/brands.scss";
-@import "~animate.css/animate.css";
-@import "~hamburgers/dist/hamburgers.css";
-
 :root {
   --animate-duration: 0.5s;
 }
@@ -26,12 +20,12 @@ $family-primary: family-Nunito-Light;
 
 $color1: black;
 $color2: white;
-$color3: #b38a4c;  //gold
+$color3: #b38a4c; 
 $color4: #F4F4F4; //home bg 
 $color5: #d2d2d2; //bg page
 $color6: #333333; //bg footer
-$color7: #909090;  //menu drop down avtive item
-$color8: rgb(107, 104, 104); //menu bg
+$color7: rgb(107, 104, 104); //menu bg
+$color8: #909090;  //menu dropdown avtive item
 
 $text1: $color1;
 $text2: $color2;
@@ -40,15 +34,32 @@ $bg1: $color4;   //primary bg
 $bg2: $color5;  //sec bg
 $bg3: $color6; //bg footer dark
 $bg4: $color2; //bg footer white
-$bg5: $color7;
-$bg6: $color8;
+
+$dropdownBg1: $color7; // main bg
+$dropdownBg2: $color3; // bottom border footer
+$dropdownBg3: $color8; // active item bg
+$dropdownText1: $color1; // menu bar
+$dropdownText2: $color2; // menu dropdown
+
+// buma overrides
 $title-color: $color3;
 
+// html defaults
 h1, h2, h3, h4 {
   color: $color3
 }
 
+// imports
+@import "~animate.css/animate.css";
+@import "~hamburgers/dist/hamburgers.css";
 @import "../node_modules/bulma/bulma.sass";
+
+// icons
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+// fonts
 @import "./fonts/nunito/Nunito-Light.ttf";
 @import "./fonts/nunito/Nunito-Bold.ttf";
 @import "./fonts/nunito/Nunito-Italic.ttf";
@@ -56,6 +67,8 @@ h1, h2, h3, h4 {
 @import "./fonts/Muli/Muli-Bold.ttf";
 @import "./fonts/roboto/Roboto-Light.ttf";
 @import "./fonts/roboto/Roboto-Bold.ttf";
+
+// pages/components
 @import "./pages/home/home";
 @import "./components/header/header";
 @import "./components/menu-nav/menu-nav";
@@ -72,6 +85,7 @@ h1, h2, h3, h4 {
 *::before {
   box-sizing: border-box;
 }
+
 html,
 body {
   font-size: 18px;
@@ -97,16 +111,6 @@ body {
       text-align: center;
     }
   }
-
-  // .header-wrap {
-  //   border: 1px solid yellow;
-  // }
-  // .content-wrap {
-  //   border: 1px solid orchid;
-  // }
-  // .footer-wrap {
-  //   border: 1px solid purple;
-  // }
 }
 
 .multiline {
